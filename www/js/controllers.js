@@ -108,7 +108,7 @@ angular.module('starter.controllers', [])
     const txtPassword = document.getElementsByClassName('md-input')[1];
     const btnLogin =  document.getElementById('loginButton');
 
-    btnLogin.addEventListener('click', e => {
+    btnLogin.addEventListener('click', function() {
         //Get email and password:
         const email = txtEmail.value;
         const pass  = txtPassword.value;
@@ -116,10 +116,10 @@ angular.module('starter.controllers', [])
 
         //Sign in:
         const promise = auth.signInWithEmailAndPassword(email, pass);
-        promise.catch(e => console.log(e.message));
+        promise.catch( function(e) {console.log(e.message);});
     });
 
-    firebase.auth().onAuthStateChanged(firebaseUser => {
+    firebase.auth().onAuthStateChanged(function(firebaseUser) {
         if(firebaseUser)
         {
             console.log(firebaseUser);
@@ -132,7 +132,7 @@ angular.module('starter.controllers', [])
             console.log("You are not able to be logged in.");
         }
     });
-    
+
     console.log($scope);
 })
 
@@ -147,7 +147,7 @@ angular.module('starter.controllers', [])
     const txtPassword = document.getElementsByClassName('md-input')[3];
     const btnLogin =  document.getElementById('loginButton');
     firebase.auth().signOut();
-    btnLogin.addEventListener('click', e => {
+    btnLogin.addEventListener('click', function() {
         //Get email and password:
         const email = txtEmail.value;
         const pass  = txtPassword.value;
@@ -155,10 +155,10 @@ angular.module('starter.controllers', [])
 
         //Sign in:
         const promise = auth.createUserWithEmailAndPassword(email, pass);
-        promise.catch(e => console.log(e.message));
+        promise.catch(function (e) {console.log(e.message);});
     });
 
-    firebase.auth().onAuthStateChanged(firebaseUser => {
+    firebase.auth().onAuthStateChanged(function(firebaseUser) {
         if(firebaseUser)
         {
             console.log("energy");
@@ -169,7 +169,7 @@ angular.module('starter.controllers', [])
             /*currentUser.email = firebaseUser.email;
             currentUser.username = document.getElementsByClassName('md-input')[0];
             currentUser.fullName = document.getElementsByClassName('md-input')[1];*/
-       
+
             alert("Congratulations on signing up to God's web");
             $state.go('app.profile');
         }
@@ -177,7 +177,7 @@ angular.module('starter.controllers', [])
             console.log("Not able to sign you up at this time.");
         }
     });
-    
+
     console.log($scope);
 })
 
@@ -338,7 +338,7 @@ angular.module('starter.controllers', [])
     });
 
     var btnLogout = document.getElementById('logoutButton');
-    btnLogout.addEventListener('click', e => {
+    btnLogout.addEventListener('click', function() {
         firebase.auth().signOut();
         $state.go('app.starter');
     });
