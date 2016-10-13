@@ -50,28 +50,16 @@
             </div>
         </div>
         -->
-
+        <div class="makePost">
+            <textarea id="postContent" width=100%>
+            </textarea>
+            <button class="button button-full button-calm ink" id="makePostButton" ng-click="makePost();">Post</button>
+        </div>
          <div class="list animate-fade-slide-in-right">
-            <a ui-sref="app.friends" class="item item-avatar">
-                <img src="img/jon-snow.jpg">
-                <h2>Jon Snow</h2>
-                <p>Da illest illegitimate</p>
-                <span>🙏 65 &nbsp; 🙌 45 &nbsp; 
-                        <i class="icon ion-heart assertive"></i> 23
-                <!--<i class="icon ion-chatbubble muted"></i>-->
-            </a>
-            <a ui-sref="app.friends" class="item item-avatar ">
-                <img src="img/sansa.jpg">
-                <h2>Sansa Stark</h2>
-                <p>&amp; This is the where text gpes and more and more text</p>
-                <span>🙏 65 &nbsp; 🙌 45 &nbsp; 
-                        <i class="icon ion-heart assertive"></i> 23
-                <!--<i class="icon ion-chatbubble muted"></i>-->
-            </a>
-            <a ui-sref="app.friends" class="item item-avatar">
-                <img src="img/tyrion.jpg">
-                <h2>Tyrion Lannister</h2>
-                <p>B.A.M.F. imp</p>
+            <a ui-sref="app.friends" class=" item-avatar" ng-repeat="post in posts">
+                <img src="{{post.userProfilePic}}">
+                <h2>{{post.username}}</h2>
+                <p>{{post.text}}</p>
                 <span>🙏 65 &nbsp; 🙌 45 &nbsp; 
                         <i class="icon ion-heart assertive"></i> 23
                 <!--<i class="icon ion-chatbubble muted"></i>-->

@@ -1,15 +1,7 @@
 /* global angular, document, window */
 'use strict';
 
-
- var config = {
-    apiKey: "AIzaSyA4o8hn-qEB3jTmw4ZdDlsksdAAWLIAVHs",
-    authDomain: "gods-web.firebaseapp.com",
-    databaseURL: "https://gods-web.firebaseio.com",
-    storageBucket: "gods-web.appspot.com",
-  };
- firebase.initializeApp(config);
-var currentUser;
+var userID;
 
 angular.module('starter.controllers', [])
 
@@ -108,77 +100,51 @@ angular.module('starter.controllers', [])
     const txtPassword = document.getElementsByClassName('md-input')[1];
     const btnLogin =  document.getElementById('loginButton');
 
-    btnLogin.addEventListener('click', e => {
-        //Get email and password:
-        const email = txtEmail.value;
-        const pass  = txtPassword.value;
-        const auth = firebase.auth();
-
-        //Sign in:
-        const promise = auth.signInWithEmailAndPassword(email, pass);
-        promise.catch(e => console.log(e.message));
-    });
-
-    firebase.auth().onAuthStateChanged(firebaseUser => {
-        if(firebaseUser)
-        {
-            console.log(firebaseUser);
-            //currentUser = firebaseUser;
-
-            //alert("You are now logged in");
-            $state.go('app.profile');
-        }
-        else{
-            console.log("You are not able to be logged in.");
-        }
-    });
-    
-    console.log($scope);
 })
 
-.controller('SignUpCtrl', function($scope, $timeout, $stateParams, ionicMaterialInk, $state) {
+.controller('SignUpCtrl', function($scope, $timeout, $stateParams, ionicMaterialInk, $state, $firebaseAuth) {
     $scope.$parent.clearFabs();
     $timeout(function() {
         $scope.$parent.hideHeader();
     }, 0);
     ionicMaterialInk.displayEffect();
 
+    const txtName = document.getElementsByClassName('md-input')[0];
+    const txtUsername = document.getElementsByClassName('md-input')[1];
     const txtEmail = document.getElementsByClassName('md-input')[2];
     const txtPassword = document.getElementsByClassName('md-input')[3];
     const btnLogin =  document.getElementById('loginButton');
-    firebase.auth().signOut();
-    btnLogin.addEventListener('click', e => {
-        //Get email and password:
-        const email = txtEmail.value;
-        const pass  = txtPassword.value;
-        const auth = firebase.auth();
 
-        //Sign in:
-        const promise = auth.createUserWithEmailAndPassword(email, pass);
-        promise.catch(e => console.log(e.message));
-    });
-
-    firebase.auth().onAuthStateChanged(firebaseUser => {
-        if(firebaseUser)
-        {
-            console.log("energy");
-            console.log(firebaseUser);
-
-            currentUser = firebaseUser;
-
-            /*currentUser.email = firebaseUser.email;
-            currentUser.username = document.getElementsByClassName('md-input')[0];
-            currentUser.fullName = document.getElementsByClassName('md-input')[1];*/
-       
-            alert("Congratulations on signing up to God's web");
-            $state.go('app.profile');
-        }
-        else{
-            console.log("Not able to sign you up at this time.");
-        }
-    });
+    var auth = $firebaseAuth();
+    var ref = firebase.database().ref().child("users");
+    $scope.createUser = function() {
     
-    console.log($scope);
+    $scope.message = null;
+    $scope.error = null;
+      // Create a new user
+      auth.$createUserWithEmailAndPassword(txtEmail.value, txtPassword.value)
+        .then(function(firebaseUser) {
+            
+            console.log("User created with uid: " + firebaseUser.uid);
+            userID = firebaseUser.uid;
+            ref.child(firebaseUser.uid).set({
+                name: txtName.value,
+                email: txtEmail.value,
+                username: txtUsername.value,
+                profilePicURL: 'img/profileDefault.png',
+                followers: 0,
+                following: 0,
+                topPosts: 0,
+                church: '-',
+                about: 'My name is '+txtName.value
+                
+
+            });
+            $state.go('app.profile');
+        }).catch(function(error) {
+            $scope.error = error;
+        });
+    };
 })
 
 .controller('StarterCtrl', function($scope, $timeout, $stateParams, ionicMaterialInk) {
@@ -208,7 +174,7 @@ angular.module('starter.controllers', [])
     ionicMaterialInk.displayEffect();
 })
 
-.controller('ProfileCtrl', function($scope, $stateParams, $timeout, ionicMaterialMotion, ionicMaterialInk) {
+.controller('ProfileCtrl', function($scope, $stateParams, $timeout, ionicMaterialMotion, ionicMaterialInk, $firebaseObject) {
     // Set Header
     $scope.$parent.showHeader();
     $scope.$parent.clearFabs();
@@ -232,8 +198,11 @@ angular.module('starter.controllers', [])
     // Set Ink
     ionicMaterialInk.displayEffect();
 
-    console.log(currentUser);
-    var i=0;
+    var ref = firebase.database().ref().child("users").child(userID);
+    var userObject = $firebaseObject(ref);
+    userObject.$bindTo($scope, "user");
+
+    /*var i=0;
     window.setInterval(function(){
         if(i==0)
         {
@@ -247,7 +216,7 @@ angular.module('starter.controllers', [])
         }
 
         //alert(i);
-    }, 5000);
+    }, 5000);*/
 })
 
 .controller('ActivityCtrl', function($scope, $stateParams, $timeout, ionicMaterialMotion, ionicMaterialInk) {
@@ -267,7 +236,7 @@ angular.module('starter.controllers', [])
     ionicMaterialInk.displayEffect();
 })
 
-.controller('HomeCtrl', function($scope, $stateParams, $timeout, ionicMaterialMotion, ionicMaterialInk) {
+.controller('HomeCtrl', function($scope, $stateParams, $timeout, ionicMaterialMotion, ionicMaterialInk, $firebaseObject, $firebaseArray) {
     $scope.$parent.showHeader();
     $scope.$parent.clearFabs();
     $scope.isExpanded = false;
@@ -282,6 +251,31 @@ angular.module('starter.controllers', [])
 
     // Activate ink for controller
     ionicMaterialInk.displayEffect();
+
+    var ref = firebase.database().ref().child("users").child(userID);
+    var userObject = $firebaseObject(ref);
+    userObject.$bindTo($scope, "user");
+
+    var postsRef = firebase.database().ref().child("posts");
+    // create a synchronized array
+    $scope.posts = $firebaseArray(postsRef);
+
+    //getPostInfo
+    var postContent = document.getElementById('postContent');
+
+    $scope.makePost = function(){
+        //alert(postContent.value);
+        $scope.posts.$add({
+            text: postContent.value,
+            datetime: new Date(),
+            userID: userID,
+            username: userObject.username,
+            userProfilePic: userObject.profilePicURL
+        });
+        postContent.value = "";
+
+    }
+
 })
 
 .controller('DevotionsCtrl', function($scope, $stateParams, $timeout, ionicMaterialMotion, ionicMaterialInk) {

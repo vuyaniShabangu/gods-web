@@ -1,12 +1,12 @@
-<ion-view view-title="">
+<ion-view view-title="Profile {{user.username}}">
 
 
     <ion-content ng-class="{expanded:$scope.isExpanded}" scroll="scroll" class="has-footer">
         <div class="hero slide-up" style="background-image: url('img/nightBG.jpeg'); height: 250px">
             <div class="content">
                 <div class="halo" style="background-image: url('img/gold_halo.png');">  </div> </br>
-                <div class="avatar" style="background-image: url('img/vuyani.jpeg');">  </div>
-                <h3><a class="light">Name Surname</a></h3>
+                <div class="avatar" style="background-image: url({{user.profilePicURL}});">  </div>
+                <h3><a class="light">{{user.name}}</a></h3>
                 
                 <!--<img src="img/verified.jpg" height=30 width=30>-->
             </div>
@@ -14,26 +14,26 @@
 
 <div class="tabs static special">
   <a class="title title header-item tab-item">
-    <h4>415</h4>
+    <h4>{{user.followers}}</h4>
     <h4>Followers</h4>
   </a>
   <a class="tab-item">
-    <h4>289</h4>
+    <h4>{{user.following}}</h4>
     <h4>Following</h4>
   </a>
   <a class="tab-item">
-    <h4>13</h4>
+    <h4>{{user.topPosts}}</h4>
     <h4>Top Posts</h4>
   </a>
 </div>
 
 <div class="tabs static ">
- <h5 style="color: white"> <i class="icon ion-ios-home"></i> Proud member of @Church</h5>
+ <h5 style="color: white"> <i class="icon ion-ios-home"></i> Proud member of @{{user.church}}</h5>
 </div>
 
     <div class="aboutWrapper">
         <h4 class="about">ABOUT</h4>
-        <p>God fearing, devil butt kicking prayer warrior!...</p>
+        <p>{{user.about}}</p>
     </div>
 
         <div class="list animate-fade-slide-in-right">
