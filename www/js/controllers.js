@@ -97,7 +97,7 @@ angular.module('starter.controllers', [])
     };
 })
 
-.controller('LoginCtrl', function($scope, $timeout, $stateParams, ionicMaterialInk, $state) {
+.controller('LoginCtrl', function($rootScope, $scope, $timeout, $stateParams, ionicMaterialInk, $state) {
     $scope.$parent.clearFabs();
     $timeout(function() {
         $scope.$parent.hideHeader();
@@ -124,6 +124,7 @@ angular.module('starter.controllers', [])
         {
             console.log(firebaseUser);
             //currentUser = firebaseUser;
+            $rootScope.currentUser = firebaseUser;
 
             //alert("You are now logged in");
             $state.go('app.profile');
@@ -383,7 +384,7 @@ angular.module('starter.controllers', [])
 
 })
 
-.controller('UpgradeHaloCtrl', function($scope, $stateParams, $timeout, ionicMaterialInk, ionicMaterialMotion) {
+.controller('UpgradeHaloCtrl', function($rootScope, $scope, $stateParams, $timeout, ionicMaterialInk, ionicMaterialMotion) {
     $scope.$parent.showHeader();
     $scope.$parent.clearFabs();
     $scope.isExpanded = false;
@@ -396,6 +397,16 @@ angular.module('starter.controllers', [])
     /*ionicMaterialMotion.pushDown({
         selector: '.push-down'
     });*/
+    $scope.upgradeHaloBronze= function() {
+         var userId = $rootScope.currentUser.uid;
+        return window.open('http://www.gods-web.com/payfast/make-payment.php?item_name=Halo+Bronze&item_description=Halo+Bronze&amount=349.00&m_payment_id=' + userId, '_blank');
+    }
+
+     $scope.upgradeHaloSilver= function() {
+        var userId = $rootScope.currentUser.uid;
+        return window.open('http://www.gods-web.com/payfast/make-payment.php?item_name=Halo+Silver&item_description=Halo+Silver&amount=599.00&m_payment_id=' + userId, '_blank');
+    }
+    console.log($rootScope.currentUser);
     ionicMaterialMotion.fadeSlideInRight({
         selector: '.animate-fade-slide-in .item'
     });
