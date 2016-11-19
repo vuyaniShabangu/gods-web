@@ -285,6 +285,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ionic-material', 'io
             }
         }
     })
+
+    .state('app.letterbox', {
+        url: '/letterbox',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/letterbox.html',
+                controller: 'LetterBoxCtrl'
+            }
+        }
+    })
     ;
 
     // if none of the above states are matched, use this as the fallback
