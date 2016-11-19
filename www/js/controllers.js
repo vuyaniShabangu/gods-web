@@ -925,6 +925,7 @@ var usersRef = firebase.database().ref().child("users");
         var eventPostalCode = document.getElementById('eventPostalCode');
         var eventCountry = document.getElementById('eventCountry');
         var eventPrice = document.getElementById('eventPrice');
+        var capacity = document.getElementById('capacity');
 
         var uploader = document.getElementById('uploader');
         var fileButton = document.getElementById('fileButton');
@@ -970,7 +971,8 @@ var usersRef = firebase.database().ref().child("users");
             userID: userID,
             username: userObject.username,
             image: imageURL,
-            attendees: []
+            attendees: [],
+            capacity: capacity.value
         }).then( function(ref){
             $ionicPopup.alert({
                 title: 'Success!',
