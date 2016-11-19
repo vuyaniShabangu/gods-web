@@ -4,8 +4,8 @@
     <ion-content ng-class="{expanded:$scope.isExpanded}" scroll="scroll" class="has-footer">
         <div class="hero slide-up" style="background-image: url('img/nightBG.jpeg'); height: 250px">
             <div class="content">
-                <div class="halo" style="background-image: url('img/gold_halo.png');">  </div> </br>
-                <div class="avatar" style="background-image: url({{user.profilePicURL}});">  </div>
+                <div class="halo" style="background-image: url('{{user.haloURL}}');">  </div> </br>
+                <div class="avatar" ng-style="{'background-image': 'url(' + user.profilePicURL + ')'}">  </div>
                 <h3><a class="light">{{user.name}}</a></h3>
                 
                 <!--<img src="img/verified.jpg" height=30 width=30>-->
@@ -14,11 +14,11 @@
 
 <div class="tabs static special">
   <a class="title title header-item tab-item">
-    <h4>{{user.followers}}</h4>
+    <h4>{{followers.length}}</h4>
     <h4>Followers</h4>
   </a>
   <a class="tab-item">
-    <h4>{{user.following}}</h4>
+    <h4>{{following.length}}</h4>
     <h4>Following</h4>
   </a>
   <a class="tab-item">
@@ -36,33 +36,31 @@
         <p>{{user.about}}</p>
     </div>
 
-        <div class="list animate-fade-slide-in-right">
-            <a ui-sref="app.friends" class="item item-avatar">
-                <img src="img/jon-snow.jpg">
-                <h2>Jon Snow</h2>
-                <p>Da illest illegitimate</p>
-                <span>🙏 65 &nbsp; 🙌 45 &nbsp; 
-                        <i class="icon ion-heart assertive"></i> 23
-                <!--<i class="icon ion-chatbubble muted"></i>-->
-            </a>
-            <a ui-sref="app.friends" class="item item-avatar ">
-                <img src="img/sansa.jpg">
-                <h2>Sansa Stark</h2>
-                <p>&amp; This is the where text gpes and more and more text</p>
-                <span>🙏 65 &nbsp; 🙌 45 &nbsp; 
-                        <i class="icon ion-heart assertive"></i> 23
-                <!--<i class="icon ion-chatbubble muted"></i>-->
-            </a>
-            <a ui-sref="app.friends" class="item item-avatar">
-                <img src="img/tyrion.jpg">
-                <h2>Tyrion Lannister</h2>
-                <p>B.A.M.F. imp</p>
-                <span>🙏 65 &nbsp; 🙌 45 &nbsp; 
-                        <i class="icon ion-heart assertive"></i> 23
-                <!--<i class="icon ion-chatbubble muted"></i>-->
-            </a>
+        <div class="item card-item" ng-repeat="(key, post) in posts | orderBy:'timestamp':true | filter:{username: user.username}"> <!-- | filter:{ username: 'hizi' } -->
+            <div class="card stable-bg ink ink-light" >
+                <div class="item item-avatar item-text-wrap">
+                    <span class="avatar" ng-click="viewUserProfile('{{post.userID}}')" style="background-image: url('{{post.userProfilePic}}');"></span>
+                    <strong ng-click="viewUserProfile('{{post.userID}}')">{{post.username}}</strong> <p>{{post.text}}</p>
+                    <div class="card-footer text-right">
+                        <span ng-click="amen({{post}})">🙏 {{post.amen.length}} &nbsp; </span> <span ng-click="hallelujah({{post}})"> 🙌 {{post.hallelujah.length}} &nbsp; </span>
+                        <span><i class="icon ion-heart assertive" ng-click="touch({{post}})"></i> {{post.touch.length}}</span>
+                        <div class="pull-left" >
+                            <i class="icon ion-clock"></i> <span am-time-ago="post.timestamp"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
+        <!-- <div class="list animate-fade-slide-in-right " >
+            <div class="item item-avatar in card stable-bg ink ink-light" ng-repeat="(key, post) in posts | orderBy:'timestamp':true">
+                <img ng-click="viewUserProfile('{{post.userID}}')" ng-src="{{post.userProfilePic}}">
+                <h2 ng-click="viewUserProfile('{{post.userID}}')">{{post.username}}</h2>
+                <p>{{post.text}}</p>
+                <span style="color: black !important"><span ng-click="amen({{post}})">🙏</span> {{post.amen.length}} &nbsp; <span ng-click="hallelujah({{post}})">🙌</span> {{post.hallelujah.length}} &nbsp; 
+                        <i ng-click="touch({{post}})" class="icon ion-heart assertive"></i> {{post.touch.length}}
+            </div>
+        </div>-->
 
 
     </ion-content>
@@ -74,10 +72,10 @@
             <a ui-sref="app.profile" class="tab-item">
                 <i class="icon ion-android-people"></i> Profile
             </a>
-            <a ui-sref="app.activity" class="tab-item">
+            <a ui-sref="app.explore" class="tab-item">
                 <i class="icon ion-ios-world"></i> Explore
             </a>
-            <a ui-sref="app.gallery" class="tab-item">
+            <a ui-sref="app.events" class="tab-item">
                 <i class="icon ion-calendar"></i> Events
             </a>
             <a ui-sref="app.devotions" class="tab-item">

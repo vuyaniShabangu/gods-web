@@ -14,7 +14,7 @@
   };
   firebase.initializeApp(config);
 
-angular.module('starter', ['ionic', 'starter.controllers', 'ionic-material', 'ionMdInput', 'firebase'])
+angular.module('starter', ['ionic', 'starter.controllers', 'ionic-material', 'ionMdInput', 'firebase', 'angularMoment'])
 
 .run(function($ionicPlatform) {
     $ionicPlatform.ready(function() {
@@ -47,12 +47,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ionic-material', 'io
         controller: 'AppCtrl'
     })
 
-    .state('app.activity', {
-        url: '/activity',
+    .state('app.explore', {
+        url: '/explore',
         views: {
             'menuContent': {
-                templateUrl: 'templates/activity.html',
-                controller: 'ActivityCtrl'
+                templateUrl: 'templates/explore.html',
+                controller: 'ExploreCtrl'
             },
            /* 'fabContent': {
                 template: '<button id="fab-activity" class="button button-fab button-fab-top-right expanded button-energized-900 flap"><i class="icon ion-paper-airplane"></i></button>',
@@ -70,7 +70,9 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ionic-material', 'io
         views: {
             'menuContent': {
                 templateUrl: 'templates/friends.html',
-                controller: 'FriendsCtrl'
+                controller: 'FriendsCtrl',
+                params: ['uid']
+
             },
             'fabContent': {
                 template: '<button id="fab-friends" class="button button-fab button-fab-top-left expanded button-energized-900 spin"><i class="icon ion-chatbubbles"></i></button>',
@@ -83,21 +85,13 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ionic-material', 'io
         }
     })
 
-    .state('app.gallery', {
-        url: '/gallery',
+    .state('app.events', {
+        url: '/events',
         views: {
             'menuContent': {
-                templateUrl: 'templates/gallery.html',
-                controller: 'GalleryCtrl'
-            },
-           /* 'fabContent': {
-                template: '<button id="fab-gallery" class="button button-fab button-fab-top-right expanded button-energized-900 drop"><i class="icon ion-heart"></i></button>',
-                controller: function ($timeout) {
-                    $timeout(function () {
-                        document.getElementById('fab-gallery').classList.toggle('on');
-                    }, 600);
-                }
-            }*/
+                templateUrl: 'templates/events.html',
+                controller: 'EventsCtrl'
+            }
         }
     })
 
@@ -107,9 +101,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ionic-material', 'io
             'menuContent': {
                 templateUrl: 'templates/login.html',
                 controller: 'LoginCtrl'
-            },
-            'fabContent': {
-                template: ''
             }
         }
     })
@@ -145,7 +136,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ionic-material', 'io
         views: {
             'menuContent': {
                 templateUrl: 'templates/home.html',
-                controller: 'HomeCtrl'
+                controller: 'HomeCtrl',
+                params: ['uid']
             },
             'fabContent': {
                 template: ''
@@ -222,6 +214,74 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ionic-material', 'io
             'menuContent': {
                 templateUrl: 'templates/register_church.html',
                 controller: 'RegisterChurchCtrl'
+            }
+        }
+    })
+
+    .state('app.addEvent', {
+        url: '/addEvent',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/addEvent.html',
+                controller: 'AddEventCtrl'
+            }
+        }
+    })
+
+    .state('app.viewEvent', {
+        url: '/viewEvent',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/view_event.html',
+                controller: 'ViewEventCtrl'
+            }
+        }
+    })
+
+    .state('app.about', {
+        url: '/about',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/about.html'            }
+        }
+    })
+
+    .state('app.edit_profile', {
+        url: '/edit_profile',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/edit_profile.html',
+                controller: 'EditProfileCtrl'
+            }
+        }
+    })
+
+    .state('app.view_user', {
+        url: '/view_user',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/view_user.html',
+                controller: 'ViewUserCtrl'
+            }
+        }
+    })
+
+    .state('app.view_category', {
+        url: '/view_category',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/view_category.html',
+                controller: 'ViewCategoryCtrl'
+            }
+        }
+    })
+
+    .state('app.passage', {
+        url: '/passage',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/passage.html',
+                controller: 'PassageCtrl'
             }
         }
     })

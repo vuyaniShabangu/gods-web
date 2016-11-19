@@ -13,24 +13,24 @@
     </ion-side-menu-content>
     <ion-side-menu side="right">
         <ion-header-bar class="dark-bg expanded">
-            <span class="avatar" style="background: url('img/vuyani.jpeg'); background-size: cover;"></span>
-            <h2>@Vuyani</h2>
+            <span class="avatar" style="background: url('{{user.profilePicURL}}'); background-size: cover;"></span>
+            <h2>{{user.username}}</h2>
         </ion-header-bar>
-        s
+        
         <ion-content class="stable-bg has-expanded-header">
             <ion-list class="list">
-                <button class="button icon-left ion-ios-paper button-full " ion-item nav-clear menu-close ui-sref="app.home">
+                <button class="button icon-left ion-ios-paper button-full " ion-item nav-clear menu-close ui-sref="app.passage">
                     My Passage
                 </button>
-                <button class="button icon-left ion-chatboxes button-full" nav-clear menu-close ui-sref="app.friends">
+               <button class="button icon-left ion-chatboxes button-full" nav-clear menu-close ui-sref="app.friends">
                     Letter Box
                 </button>
                 <button class="button icon-left ion-paintbrush button-full" nav-clear menu-close ui-sref="app.extra">
                     Extras
                 </button>
-                <button class="button icon-left ion-person-add button-full" nav-clear menu-close ui-sref="app.add_new_account">
+               <!-- <button class="button icon-left ion-person-add button-full" nav-clear menu-close ui-sref="app.add_new_account">
                     Add New Account
-                </button>
+                </button>-->
                 <button class="button icon-left ion-ios-circle-filled button-full" nav-clear menu-close ui-sref="app.upgrade_halo">
                     Halo Upgrade
                 </button>

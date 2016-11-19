@@ -1,133 +1,40 @@
 <ion-view view-title="Daily Devotionals">
-    <ion-content ng-class="{expanded:isExpanded}" class="animate-fade-slide-in">
+    <ion-content ng-class="{expanded:$scope.isExpanded}" scroll="scroll" class="has-footer">
+
+        <div class="list card" ng-repeat="devCat in devotionalCategories">
 
 
-
-        <div class="item card-item">
-            <div ui-sref="app.gallery" class="card stable-bg ink ink-light">
-                <div class="item  item-text-wrap">
-                    <strong>Acts 4:19-20</strong>
-                    <p> 19 But Peter and John replied, "Which is right in God's eyes: to listen to you, or to him? You be the judges! 20 As for us, we cannot help speaking about what we have seen and heard."</p>
-                    <div class="card-footer text-right">
-                        <span>🙏 65 &nbsp; 🙌 45 &nbsp; 
-                        <i class="icon ion-heart assertive"></i> 23
-                        <div class="pull-left">
-                            <i class="icon ion-clock"></i> 12 mins ago
-                        </div>
-                    </div>
-                </div>
+            <div class="item item-body" ng-click="viewCategory(devCat);">
+                <img class="full-image" ng-src="{{devCat.imageURL}}">
+               <!-- <p>
+                This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
+                the content is from a card-body consisting of an image and paragraph text. The footer
+                consists of tabs, icons aligned left, within the card-footer.
+                </p>-->
+                <p>
+                    <!--<a href="http://www.gods-web.com" class="subdued">God's Web Online</a>-->
+                    <h2>{{devCat.name}}</h2>
+                </p>
+   
             </div>
+
         </div>
 
-                <div class="item card-item">
-            <div ui-sref="app.gallery" class="card stable-bg ink ink-light">
-                <div class="item  item-text-wrap">
-                    <strong>Isaiah 6:8</strong>
-                    <p> 8 Then I heard the voice of the Lord saying, "Whom shall I send? And who will go for us?"" And I said, "Here am I. Send me!"</p>
-                    <div class="card-footer text-right">
-                        <span>🙏 65 &nbsp; 🙌 45 &nbsp; 
-                        <i class="icon ion-heart assertive"></i> 23
-                        <div class="pull-left">
-                            <i class="icon ion-clock"></i> 12 mins ago
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-                <div class="item card-item">
-            <div ui-sref="app.gallery" class="card stable-bg ink ink-light">
-                <div class="item  item-text-wrap">
-                    <strong>Acts 18:9-10</strong>
-                    <p> 9 One night the Lord spoke to Paul in a vision: "Do not be afraid; keep on speaking, do not be silent. 10 For I am with you, and no one is going to attack and harm you, because I have many people in this city."</p>
-                    <div class="card-footer text-right">
-                        <span>🙏 65 &nbsp; 🙌 45 &nbsp; 
-                        <i class="icon ion-heart assertive"></i> 23
-                        <div class="pull-left">
-                            <i class="icon ion-clock"></i> 12 mins ago
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-                <div class="item card-item">
-            <div ui-sref="app.gallery" class="card stable-bg ink ink-light">
-                <div class="item  item-text-wrap">
-                    <strong>Romans 12:9</strong>
-                    <p>9 Love must be sincere. Hate what is evil; cling to what is good.</p>
-                    <div class="card-footer text-right">
-                        <span>🙏 65 &nbsp; 🙌 45 &nbsp; 
-                        <i class="icon ion-heart assertive"></i> 23
-                        <div class="pull-left">
-                            <i class="icon ion-clock"></i> 12 mins ago
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-                <div class="item card-item">
-            <div ui-sref="app.gallery" class="card stable-bg ink ink-light">
-                <div class="item  item-text-wrap">
-                    <strong>Galatians 5:13</strong>
-                    <p> 13 You, my brothers and sisters, were called to be free. But do not use your freedom to indulge the flesh ; rather, serve one another humbly in love.</p>
-                    <div class="card-footer text-right">
-                        <span>🙏 65 &nbsp; 🙌 45 &nbsp; 
-                        <i class="icon ion-heart assertive"></i> 23
-                        <div class="pull-left">
-                            <i class="icon ion-clock"></i> 12 mins ago
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-                <div class="item card-item">
-            <div ui-sref="app.gallery" class="card stable-bg ink ink-light">
-                <div class="item  item-text-wrap">
-                    <strong>2 Corinthians 3:17</strong>
-                    <p> 17 Now the Lord is the Spirit, and where the Spirit of the Lord is, there is freedom.</p>
-                    <div class="card-footer text-right">
-                        <span>🙏 65 &nbsp; 🙌 45 &nbsp; 
-                        <i class="icon ion-heart assertive"></i> 23
-                        <div class="pull-left">
-                            <i class="icon ion-clock"></i> 12 mins ago
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-                <div class="item card-item">
-            <div ui-sref="app.gallery" class="card stable-bg ink ink-light">
-                <div class="item  item-text-wrap">
-                    <strong>Ephesians 3:12</strong>
-                    <p>12 In him and through faith in him we may approach God with freedom and confidence.
-</p>
-                    <div class="card-footer text-right">
-                        <span>🙏 65 &nbsp; 🙌 45 &nbsp; 
-                        <i class="icon ion-heart assertive"></i> 23
-                        <div class="pull-left">
-                            <i class="icon ion-clock"></i> 12 mins ago
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </ion-content>
             <ion-footer-bar>
-     <div class="tabs tabs-dark tabs-icon-top static">
+      <div class="tabs tabs-dark tabs-icon-top static">
             <a ui-sref="app.home" class="tab-item">
                 <i class="icon ion-ios-home"></i> Home
             </a>
             <a ui-sref="app.profile" class="tab-item">
                 <i class="icon ion-android-people"></i> Profile
             </a>
-            <a ui-sref="app.activity" class="tab-item">
+            <a ui-sref="app.explore" class="tab-item">
                 <i class="icon ion-ios-world"></i> Explore
             </a>
-            <a ui-sref="app.gallery" class="tab-item">
+            <a ui-sref="app.events" class="tab-item">
                 <i class="icon ion-calendar"></i> Events
             </a>
             <a ui-sref="app.devotions" class="tab-item">

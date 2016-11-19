@@ -1,96 +1,31 @@
 <ion-view view-title="Halo Upgrade">
     <ion-content ng-class="" class="animate-fade-slide-in" scroll="true">
-    <!--
-        <div class="item card-item">
-            <div ui-sref="app.gallery" class="card stable-bg ink ink-dark">
-                <div class="item item-avatar item-text-wrap">
-                    <span class="avatar" style="background-image: url('img/jon-snow.jpg');"></span>
-                    <strong>Jon Snow</strong> knows nothing.
-                    <div class="card-footer text-right">
-                        <span>🙏 65 &nbsp; 🙌 45 &nbsp; ♥ 90 </span>
-                        <div class="pull-left">
-                            <i class="icon ion-clock"></i> just now
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="item card-item">
-            <div ui-sref="app.gallery" class="card stable-bg ink ink-dark">
-                <div class="item item-avatar item-text-wrap">
-                    <span class="avatar" style="background-image: url('img/tyrion.jpg');"></span>
-                    <strong>Tyrion Lannister</strong> says "Perhaps that is the secret. It is not what we do, so much as why we do it."
-                    <div class="card-footer text-right">
-                        <span>🙏 65 &nbsp; 🙌 45 &nbsp; ♥ 90 </span>
-                        <div class="pull-left">
-                            <i class="icon ion-clock"></i> 12 mins ago
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="item card-item">
-            <div ui-sref="app.gallery" class="card stable-bg ink ink-dark">
-                <div class="item item-avatar item-text-wrap">
-                    <span class="avatar" style="background-image: url('img/sansa.jpg');"></span>
-                    <strong>Sansa Stark</strong> added a gallery <strong>Pretending to be Anna from Frozen</strong> ...
-                    <a class="image"><img src="img/sansa-snowcastle.png">
-                    </a>
-                    <a class="image"><img src="img/sansa-snowcastle2.jpg">
-                    </a>
-                    <a class="image"><img src="img/sansa-snowcastle3.jpg">
-                    </a>
-                    <div class="card-footer text-right">
-                        <span>🙏 65 &nbsp; 🙌 45 &nbsp; ♥ 90 </span>
-                        <div class="pull-left">
-                            <i class="icon ion-clock"></i> 3 hrs ago
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        -->
-
-
-<div class="list ">
+        
+        <div class="list ">
 
   <div class="item card ">
-    <div class="halo" style="background-image: url('img/gold_halo.png');">  </div>
+    <div class="halo" style="background-image: url('img/bronze_halo.png');">  </div>
     <h2>Upgrade to Bronze Halo</h2>
-    <p>R99</p>
+    <p>R 349.00 ZAR</p>
   
 
-  <div class=" assertive" href="#">
+  <div class=" assertive"  ng-click="upgradeHaloBronze()">
     <i class="icon ion-card"></i>
     Buy
   </div>
   </div>
 
     <div class="item card">
-    <div class="halo" style="background-image: url('img/gold_halo.png');">  </div>
+    <div class="halo" style="background-image: url('img/silver_halo.png');">  </div>
     <h2>Upgrade to Silver Halo</h2>
-    <p>R99</p>
+    <p>R 599.00 ZAR</p>
   
 
-  <div class=" assertive" href="#">
+  <div class=" assertive"  ng-click="upgradeHaloSilver()">
     <i class="icon ion-card"></i>
-    Buy
+     Buy
   </div>
   </div>
-
-
-  <div class="item card">
-    <div class="halo" style="background-image: url('img/gold_halo.png');">  </div>
-    <h2>Upgrade to Gold Halo</h2>
-    <p>R99</p>
-  
-
-  <div class=" assertive" href="#">
-    <i class="icon ion-card"></i>
-    Buy
-  </div>
-  </div>
-
 
 </div>
 
@@ -104,7 +39,7 @@
             <a ui-sref="app.profile" class="tab-item">
                 <i class="icon ion-android-people"></i> Profile
             </a>
-            <a ui-sref="app.activity" class="tab-item">
+            <a ui-sref="app.explore" class="tab-item">
                 <i class="icon ion-ios-world"></i> Explore
             </a>
             <a ui-sref="app.gallery" class="tab-item">

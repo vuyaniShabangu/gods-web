@@ -204,7 +204,7 @@ module.exports = function(angularApp) {
                     var delayValue = offset / speed / options.finishDelayThrottle;
                     var delay = parseFloat(delayValue).toFixed(2);
                 }
-                animateFadeSlideInDom[0].className += ' done';
+                //animateFadeSlideInDom[0].className += ' done';
 
             }, speed * options.finishSpeedPercent);
 
@@ -285,7 +285,7 @@ module.exports = function(angularApp) {
                     var delayValue = offset / speed / options.finishDelayThrottle;
                     var delay = parseFloat(delayValue).toFixed(2);
                 }
-                animateSlideInRightDom[0].className += ' done';
+                //animateSlideInRightDom[0].className += ' done';
 
             }, speed * options.finishSpeedPercent);
 
