@@ -1,0 +1,110 @@
+<ion-view view-title="Explore God's Web">
+    <ion-content ng-class="{expanded:isExpanded}" class="animate-fade-slide-in">
+
+        <div class="item card-item" ng-repeat="post in posts | orderBy:'touch.length':true | limitTo:1">
+            <div class="card stable-bg ink ink-prim" >
+                <div class="item item-avatar item-text-wrap">
+                    <span class="avatar" ng-click="viewUserProfile('{{post.userID}}')" style="background-image: url('{{post.userProfilePic}}');"></span>
+                    <h2>Word of The Day</h2>
+                    <strong ng-click="viewUserProfile('{{post.userID}}')">{{post.username}}</strong> <p>{{post.text}}</p>
+                    <div class="card-footer text-right">
+                        <span ng-click="amen({{post}})">🙏 {{post.amen.length}} &nbsp; </span> <span ng-click="hallelujah({{post}})"> 🙌 {{post.hallelujah.length}} &nbsp; </span>
+                        <span><i class="icon ion-heart assertive" ng-click="touch({{post}})"></i> {{post.touch.length}}</span>
+                        <div class="pull-left" >
+                            <i class="icon ion-clock"></i> <span am-time-ago="post.timestamp"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item card-item" ng-repeat="post in posts | orderBy:'touch.length':true | limitTo:1">
+            <div class="card stable-bg ink ink-gold" >
+                <div class="item item-avatar item-text-wrap">
+                    <span class="avatar" ng-click="viewUserProfile('{{post.userID}}')" style="background-image: url('{{post.userProfilePic}}');"></span>
+                    <strong ng-click="viewUserProfile('{{post.userID}}')">{{post.username}}</strong> <p>{{post.text}}</p>
+                    <div class="card-footer text-right">
+                        <span ng-click="amen({{post}})">🙏 {{post.amen.length}} &nbsp; </span> <span ng-click="hallelujah({{post}})"> 🙌 {{post.hallelujah.length}} &nbsp; </span>
+                        <span><i class="icon ion-heart assertive" ng-click="touch({{post}})"></i> {{post.touch.length}}</span>
+                        <div class="pull-left" >
+                            <i class="icon ion-clock"></i> <span am-time-ago="post.timestamp"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       <div class="item card-item" ng-repeat="post in posts | orderBy:'touch.length':true | limitTo:1">
+            <div class="card stable-bg ink ink-silver" >
+                <div class="item item-avatar item-text-wrap">
+                    <span class="avatar" ng-click="viewUserProfile('{{post.userID}}')" style="background-image: url('{{post.userProfilePic}}');"></span>
+                    <strong ng-click="viewUserProfile('{{post.userID}}')">{{post.username}}</strong> <p>{{post.text}}</p>
+                    <div class="card-footer text-right">
+                        <span ng-click="amen({{post}})">🙏 {{post.amen.length}} &nbsp; </span> <span ng-click="hallelujah({{post}})"> 🙌 {{post.hallelujah.length}} &nbsp; </span>
+                        <span><i class="icon ion-heart assertive" ng-click="touch({{post}})"></i> {{post.touch.length}}</span>
+                        <div class="pull-left" >
+                            <i class="icon ion-clock"></i> <span am-time-ago="post.timestamp"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item card-item" ng-repeat="post in posts | orderBy:'touch.length':true | limitTo:1">
+            <div class="card stable-bg ink ink-bronze" >
+                <div class="item item-avatar item-text-wrap">
+                    <span class="avatar" ng-click="viewUserProfile('{{post.userID}}')" style="background-image: url('{{post.userProfilePic}}');"></span>
+                    <strong ng-click="viewUserProfile('{{post.userID}}')">{{post.username}}</strong> <p>{{post.text}}</p>
+                    <div class="card-footer text-right">
+                        <span ng-click="amen({{post}})">🙏 {{post.amen.length}} &nbsp; </span> <span ng-click="hallelujah({{post}})"> 🙌 {{post.hallelujah.length}} &nbsp; </span>
+                        <span><i class="icon ion-heart assertive" ng-click="touch({{post}})"></i> {{post.touch.length}}</span>
+                        <div class="pull-left" >
+                            <i class="icon ion-clock"></i> <span am-time-ago="post.timestamp"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+               <div class="item card-item" ng-repeat="post in posts | orderBy:'touch.length':true | limitTo:1">
+            <div class="card stable-bg ink ink-light" >
+                <div class="item item-avatar item-text-wrap">
+                    <span class="avatar" ng-click="viewUserProfile('{{post.userID}}')" style="background-image: url('{{post.userProfilePic}}');"></span>
+                    <strong ng-click="viewUserProfile('{{post.userID}}')">{{post.username}}</strong> <p>{{post.text}}</p>
+                    <div class="card-footer text-right">
+                        <span ng-click="amen({{post}})">🙏 {{post.amen.length}} &nbsp; </span> <span ng-click="hallelujah({{post}})"> 🙌 {{post.hallelujah.length}} &nbsp; </span>
+                        <span><i class="icon ion-heart assertive" ng-click="touch({{post}})"></i> {{post.touch.length}}</span>
+                        <div class="pull-left" >
+                            <i class="icon ion-clock"></i> <span am-time-ago="post.timestamp"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+     
+        
+    </ion-content>
+            <ion-footer-bar>
+       <div class="tabs tabs-dark tabs-icon-top static">
+            <a ui-sref="app.home" class="tab-item">
+                <i class="icon ion-ios-home"></i> Home
+            </a>
+            <a ui-sref="app.profile" class="tab-item">
+                <i class="icon ion-android-people"></i> Profile
+            </a>
+            <a ui-sref="app.explore" class="tab-item">
+                <i class="icon ion-ios-world"></i> Explore
+            </a>
+            <a ui-sref="app.events" class="tab-item">
+                <i class="icon ion-calendar"></i> Events
+            </a>
+            <a ui-sref="app.devotions" class="tab-item">
+                <i class="icon ion-ios-book"></i> Devotions
+            </a>
+            <a ui-sref="app.settings" class="tab-item">
+                <i class="icon ion-settings"></i> Settings
+            </a>
+    </div>
+        </ion-footer-bar>
+</ion-view>

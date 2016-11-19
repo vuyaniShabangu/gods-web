@@ -1,0 +1,76 @@
+<ion-view view-title="Profile {{user.username}}">
+
+
+    <ion-content ng-class="{expanded:$scope.isExpanded}" scroll="scroll" class="has-footer">
+        <div class="hero slide-up" style="background-image: url('img/nightBG.jpeg'); height: 250px">
+            <div class="content">
+                <div class="halo" style="background-image: url('img/gold_halo.png');">  </div> </br>
+                <div class="avatar" ng-style="{'background-image': 'url(' + user.profilePicURL + ')'}">  </div>
+                <h3><a class="light">{{user.name}}</a></h3>
+                
+                <!--<img src="img/verified.jpg" height=30 width=30>-->
+            </div>
+        </div>
+
+<div class="tabs static special">
+  <a class="title title header-item tab-item">
+    <h4>{{followers.length}}</h4>
+    <h4>Followers</h4>
+  </a>
+  <a class="tab-item">
+    <h4>{{following.length}}</h4>
+    <h4>Following</h4>
+  </a>
+  <a class="tab-item">
+    <h4>{{user.topPosts}}</h4>
+    <h4>Top Posts</h4>
+  </a>
+</div>
+
+<div class="tabs static ">
+ <h5 style="color: white"> <i class="icon ion-ios-home"></i> Proud member of @{{user.church}}</h5>
+</div>
+<button class="button button-full button-calm ink" id="followButton" ng-click="followUser();">Follow</button>
+
+
+    <div class="aboutWrapper">
+        <h4 class="about">ABOUT</h4>
+        <p>{{user.about}}</p>
+    </div>
+
+    <div class="list animate-fade-slide-in-right" >
+            <a ui-sref="app.friends" class="item item-avatar in" ng-repeat="post in posts | orderBy:'timestamp':true">
+                <img ng-src="{{post.userProfilePic}}">
+                <h2>{{post.username}}</h2>
+                <p>{{post.text}}</p>
+                <span>🙏 0 &nbsp; 🙌 0 &nbsp; 
+                        <i class="icon ion-heart assertive"></i> 0
+                <!--<i class="icon ion-chatbubble muted"></i>-->
+            </a>
+        </div>
+
+
+    </ion-content>
+    <ion-footer-bar>
+     <div class="tabs tabs-dark tabs-icon-top static">
+            <a ui-sref="app.home" class="tab-item">
+                <i class="icon ion-ios-home"></i> Home
+            </a>
+            <a ui-sref="app.profile" class="tab-item">
+                <i class="icon ion-android-people"></i> Profile
+            </a>
+            <a ui-sref="app.explore" class="tab-item">
+                <i class="icon ion-ios-world"></i> Explore
+            </a>
+            <a ui-sref="app.events" class="tab-item">
+                <i class="icon ion-calendar"></i> Events
+            </a>
+            <a ui-sref="app.devotions" class="tab-item">
+                <i class="icon ion-ios-book"></i> Devotions
+            </a>
+            <a ui-sref="app.settings" class="tab-item">
+                <i class="icon ion-settings"></i> Settings
+            </a>
+    </div>
+        </ion-footer-bar>
+</ion-view>

@@ -1,0 +1,51 @@
+<ion-view view-title="Events">
+    <ion-content ng-class="{expanded:isExpanded}" class="animate-fade-slide-in">
+
+        <div class="list card animate-fade-slide-in-right" ng-repeat="(id,event) in events">
+            <a ng-click="viewEvent({{event}})" class="item item-body  in" >
+                <img ng-src="{{event.image}}" class="full-image">
+                <h2>{{event.eventName}}</h2>
+                <p>{{event.eventDesc}}</p>
+                <i class="icon ion-android-calendar"></i>
+                            {{event.eventDate}}
+                <i class="icon ion-clock"></i>
+                            {{event.eventTime}}
+                <i class="icon ion-ios-location"></i>
+                            {{event.eventChurch}}
+                <i class="icon ion-cash"></i>
+                            R{{event.eventPrice}}
+                 
+           </a>
+        </div>
+
+    
+
+    </ion-content>
+        <ion-footer-bar>
+     <div class="tabs tabs-dark tabs-icon-top static">
+            <a ui-sref="app.home" class="tab-item">
+                <i class="icon ion-ios-home"></i> Home
+            </a>
+            <a ui-sref="app.profile" class="tab-item">
+                <i class="icon ion-android-people"></i> Profile
+            </a>
+            <a ui-sref="app.explore" class="tab-item">
+                <i class="icon ion-ios-world"></i> Explore
+            </a>
+            <a ui-sref="app.events" class="tab-item">
+                <i class="icon ion-calendar"></i> Events
+            </a>
+            <a ui-sref="app.devotions" class="tab-item">
+                <i class="icon ion-ios-book"></i> Devotions
+            </a>
+            <a ui-sref="app.settings" class="tab-item">
+                <i class="icon ion-settings"></i> Settings
+            </a>
+    </div>
+
+<button ui-sref="app.addEvent" id="fab" class="button button-calm button-fab button-fab-bottom-right activated">
+            <i class="icon ion-plus-round"></i>
+</button>
+
+        </ion-footer-bar>
+</ion-view>
