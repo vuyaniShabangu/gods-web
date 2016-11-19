@@ -969,7 +969,8 @@ var usersRef = firebase.database().ref().child("users");
             eventPrice : eventPrice.value,
             userID: userID,
             username: userObject.username,
-            image: imageURL
+            image: imageURL,
+            attendees: []
         }).then( function(ref){
             $ionicPopup.alert({
                 title: 'Success!',

@@ -45,7 +45,7 @@
                     <strong ng-click="viewUserProfile('{{post.userID}}')">{{post.username}}</strong> <p>{{post.text}}</p>
                     <div class="card-footer text-right">
                         <span ng-click="amen({{post}})">🙏 {{post.amen.length}} &nbsp; </span> <span ng-click="hallelujah({{post}})"> 🙌 {{post.hallelujah.length}} &nbsp; </span>
-                        <span><i class="icon ion-heart assertive" ng-click="touch({{post}})"></i> {{post.touch.length}}</span>
+                        <span ng-click="touch({{post}})"><i class="icon ion-heart assertive"></i> {{post.touch.length}}</span>
                         <div class="pull-left" >
                             <i class="icon ion-clock"></i> <span am-time-ago="post.timestamp"></span>
                         </div>
