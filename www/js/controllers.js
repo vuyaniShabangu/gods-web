@@ -769,6 +769,12 @@ var usersRef = firebase.database().ref().child("users");
 
     $scope.book = function(){
         var numOfSeats = document.getElementById('numOfSeats').value;
+        var amount = numOfSeats * $scope.event.eventPrice;
+        var userId = userID;
+        var eventName = $scope.event.eventName;
+        var eventDesc = $scope.event.eventDesc;
+        var eventId = $scope.event.$id;
+        return window.open('http://www.gods-web.com/payfast/make-payment.php?item_name=' + eventName + '&item_description='+ eventDesc + '&amount=' + amount + '&m_payment_id=' + userId + '&event_id=' + eventId + '&num_seats=' + numOfSeats + '&pay_type=event', '_blank');
         console.log("Seats "+numOfSeats);
     }
 })
@@ -838,12 +844,16 @@ var usersRef = firebase.database().ref().child("users");
 
 })
 
-.controller('UpgradeHaloCtrl', function($rootScope, $scope, $stateParams, $timeout, ionicMaterialInk, ionicMaterialMotion) {
+.controller('UpgradeHaloCtrl', function($rootScope, $scope, $stateParams, $timeout, ionicMaterialInk, ionicMaterialMotion, $firebaseObject, $firebaseArray) {
     $scope.$parent.showHeader();
     $scope.$parent.clearFabs();
     $scope.isExpanded = false;
     $scope.$parent.setExpanded(false);
     $scope.$parent.setHeaderFab(false);
+
+    var ref = firebase.database().ref().child("users").child(userID);
+    var userObject = $firebaseObject(ref);
+    userObject.$bindTo($scope, "user");
 
     // Activate ink for controller
     //ionicMaterialInk.displayEffect();
@@ -853,12 +863,12 @@ var usersRef = firebase.database().ref().child("users");
     });*/
     $scope.upgradeHaloBronze= function() {
          var userId = userID;
-        return window.open('http://www.gods-web.com/payfast/make-payment.php?item_name=Halo+Bronze&item_description=Halo+Bronze&amount=349.00&m_payment_id=' + userId, '_blank');
+        return window.open('http://www.gods-web.com/payfast/make-payment.php?item_name=Halo+Bronze&item_description=Halo+Bronze&amount=349.00&m_payment_id=' + userId + '&pay_type=halo', '_blank');
     }
 
      $scope.upgradeHaloSilver= function() {
         var userId = userID;
-        return window.open('http://www.gods-web.com/payfast/make-payment.php?item_name=Halo+Silver&item_description=Halo+Silver&amount=599.00&m_payment_id=' + userId, '_blank');
+        return window.open('http://www.gods-web.com/payfast/make-payment.php?item_name=Halo+Silver&item_description=Halo+Silver&amount=599.00&m_payment_id=' + userId + '&pay_type=halo', '_blank');
     }
     console.log($rootScope.currentUser);
     ionicMaterialMotion.fadeSlideInRight({
