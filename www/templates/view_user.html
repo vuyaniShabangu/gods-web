@@ -38,15 +38,20 @@
         <p>{{user.about}}</p>
     </div>
 
-    <div class="list animate-fade-slide-in-right" >
-            <a ui-sref="app.friends" class="item item-avatar in" ng-repeat="post in posts | orderBy:'timestamp':true">
-                <img ng-src="{{post.userProfilePic}}">
-                <h2>{{post.username}}</h2>
-                <p>{{post.text}}</p>
-                <span>🙏 0 &nbsp; 🙌 0 &nbsp; 
-                        <i class="icon ion-heart assertive"></i> 0
-                <!--<i class="icon ion-chatbubble muted"></i>-->
-            </a>
+<div class="item card-item" ng-repeat="(key, post) in posts | orderBy:'timestamp':true | filter:{username: user.username}"> <!-- | filter:{ username: 'hizi' } -->
+            <div class="card stable-bg ink ink-light" >
+                <div class="item item-avatar item-text-wrap">
+                    <span class="avatar" ng-click="viewUserProfile('{{post.userID}}')" style="background-image: url('{{post.userProfilePic}}');"></span>
+                    <strong ng-click="viewUserProfile('{{post.userID}}')">{{post.username}}</strong> <p>{{post.text}}</p>
+                    <div class="card-footer text-right">
+                        <span ng-click="amen({{post}})">🙏 {{post.amen.length}} &nbsp; </span> <span ng-click="hallelujah({{post}})"> 🙌 {{post.hallelujah.length}} &nbsp; </span>
+                        <span><i class="icon ion-heart assertive" ng-click="touch({{post}})"></i> {{post.touch.length}}</span>
+                        <div class="pull-left" >
+                            <i class="icon ion-clock"></i> <span am-time-ago="post.timestamp"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
 
