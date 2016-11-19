@@ -935,6 +935,7 @@ var usersRef = firebase.database().ref().child("users");
         var eventPostalCode = document.getElementById('eventPostalCode');
         var eventCountry = document.getElementById('eventCountry');
         var eventPrice = document.getElementById('eventPrice');
+        var capacity = document.getElementById('capacity');
 
         var uploader = document.getElementById('uploader');
         var fileButton = document.getElementById('fileButton');
@@ -979,7 +980,9 @@ var usersRef = firebase.database().ref().child("users");
             eventPrice : eventPrice.value,
             userID: userID,
             username: userObject.username,
-            image: imageURL
+            image: imageURL,
+            attendees: [],
+            capacity: capacity.value
         }).then( function(ref){
             $ionicPopup.alert({
                 title: 'Success!',
@@ -1104,12 +1107,91 @@ var usersRef = firebase.database().ref().child("users");
         $scope.posts.$loaded()
             .then(function(){
                 angular.forEach($scope.posts, function(post) {
+                    console.log(post);
                     post.username = users.$getRecord(post.userID).username;
                     post.userProfilePic = users.$getRecord(post.userID).profilePicURL;
+                    post.amen =  $.map(post.amen, function(value, index) {
+                                    return [value];
+                    });
+                    post.hallelujah =  $.map(post.hallelujah, function(value, index) {
+                                    return [value];
+                    });
+                    post.touch =  $.map(post.touch, function(value, index) {
+                                    return [value];
+                    });
+                   
             })
         });
 
     });
+
+    $scope.viewUserProfile = function(uid){
+        otherUserID = uid;
+        if(uid == userID)
+            $state.go('app.profile');
+        else
+            $state.go('app.view_user');
+    }
+
+    $scope.amen = function(pst){
+        console.log(pst.$id);
+        var key  = pst.$id;
+        var selectedPostRef =  firebase.database().ref().child("posts").child(key).child("amen");
+        $scope.selectedPost = $firebaseArray(selectedPostRef);
+        $scope.selectedPost.$add({
+            user: userID
+        });
+        loadObjects();
+    }
+
+    $scope.hallelujah = function(pst){
+        console.log(pst.$id);
+        var key  = pst.$id;
+        var selectedPostRef =  firebase.database().ref().child("posts").child(key).child("hallelujah");
+        $scope.selectedPost = $firebaseArray(selectedPostRef);
+        $scope.selectedPost.$add({
+            user: userID
+        });
+        loadObjects();
+    }
+
+    $scope.touch = function(pst){
+        console.log(pst.$id);
+        var key  = pst.$id;
+        var selectedPostRef =  firebase.database().ref().child("posts").child(key).child("touch");
+        $scope.selectedPost = $firebaseArray(selectedPostRef);
+        $scope.selectedPost.$add({
+            user: userID
+        });
+        loadObjects();
+    }
+
+
+    function loadObjects(){
+            users.$loaded().then( function(){
+
+            $scope.posts.$loaded()
+                .then(function(){
+                    angular.forEach($scope.posts, function(post) {
+                        console.log(post);
+                        post.username = users.$getRecord(post.userID).username;
+                        post.userProfilePic = users.$getRecord(post.userID).profilePicURL;
+                        post.amen =  $.map(post.amen, function(value, index) {
+                                        return [value];
+                        });
+                        post.hallelujah =  $.map(post.hallelujah, function(value, index) {
+                                        return [value];
+                        });
+                        post.touch =  $.map(post.touch, function(value, index) {
+                                        return [value];
+                        });
+                    
+                })
+            });
+
+        });
+    }
+
 
     //Following:
 
