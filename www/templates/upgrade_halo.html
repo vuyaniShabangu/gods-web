@@ -4,24 +4,30 @@
         <div class="list ">
 
   <div class="item card ">
+      <div class="pull-right"  style="margin-right: 15px;" ng-if="user.halo == 'Halo Bronze'">
+          <span>Current Halo</span>
+      </div>
     <div class="halo" style="background-image: url('img/bronze_halo.png');">  </div>
     <h2>Upgrade to Bronze Halo</h2>
     <p>R 349.00 ZAR</p>
   
 
-  <div class=" assertive"  ng-click="upgradeHaloBronze()">
+  <div class=" assertive"  ng-click="upgradeHaloBronze()" ng-if="user.halo !== 'Halo Bronze' && user.halo !== 'Halo Silver'">
     <i class="icon ion-card"></i>
     Buy
   </div>
   </div>
 
     <div class="item card">
+        <div class="pull-right"  style="margin-right: 15px;" ng-if="user.halo == 'Halo Silver'">
+            <span>Current Halo</span>
+        </div>
     <div class="halo" style="background-image: url('img/silver_halo.png');">  </div>
     <h2>Upgrade to Silver Halo</h2>
     <p>R 599.00 ZAR</p>
   
 
-  <div class=" assertive"  ng-click="upgradeHaloSilver()">
+  <div class=" assertive"  ng-click="upgradeHaloSilver()" ng-if="user.halo !== 'Halo Silver'">
     <i class="icon ion-card"></i>
      Buy
   </div>
