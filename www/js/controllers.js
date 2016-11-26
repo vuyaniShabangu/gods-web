@@ -267,7 +267,6 @@ var usersRef = firebase.database().ref().child("users");
         $scope.posts.$loaded()
             .then(function(){
                 angular.forEach($scope.posts, function(post) {
-                    console.log(post);
                     post.username = users.$getRecord(post.userID).username;
                     post.userProfilePic = users.$getRecord(post.userID).profilePicURL;
                     post.amen =  $.map(post.amen, function(value, index) {
@@ -575,7 +574,6 @@ var usersRef = firebase.database().ref().child("users");
         $scope.posts.$loaded()
             .then(function(){
                 angular.forEach($scope.posts, function(post) {
-                    console.log(post);
                     post.username = users.$getRecord(post.userID).username;
                     post.userProfilePic = users.$getRecord(post.userID).profilePicURL;
                     post.amen =  $.map(post.amen, function(value, index) {
@@ -775,7 +773,7 @@ var usersRef = firebase.database().ref().child("users");
         var eventDesc = $scope.event.eventDesc;
         var eventId = $scope.event.$id;
         return window.open('http://www.gods-web.com/payfast/make-payment.php?item_name=' + eventName + '&item_description='+ eventDesc + '&amount=' + amount + '&m_payment_id=' + userId + '&event_id=' + eventId + '&num_seats=' + numOfSeats + '&pay_type=event', '_blank');
-        console.log("Seats "+numOfSeats);
+        //console.log("Seats "+numOfSeats);
     }
 })
 
@@ -1364,6 +1362,86 @@ var usersRef = firebase.database().ref().child("users");
 
     
     console.log("message page");
+})
+
+.controller('ReportAProblemCtrl', function($scope, $stateParams, $timeout, ionicMaterialInk, ionicMaterialMotion, $firebaseObject, $ionicPopup, $http) {
+    $scope.$parent.showHeader();
+    $scope.$parent.clearFabs();
+    $scope.isExpanded = false;
+    $scope.$parent.setExpanded(false);
+    $scope.$parent.setHeaderFab(false);
+
+    // Activate ink for controller
+    //ionicMaterialInk.displayEffect();
+
+    /*ionicMaterialMotion.pushDown({
+        selector: '.push-down'
+    });*/
+    ionicMaterialMotion.fadeSlideInRight({
+        selector: '.animate-fade-slide-in .item'
+    });
+
+    var ref = firebase.database().ref().child("users").child(userID);
+    var userObject = $firebaseObject(ref);
+    userObject.$bindTo($scope, "user");
+
+    var reportProblemText = document.getElementById('reportProblemText');
+
+    $scope.reportProblem = function(){
+        $http.post("http://gods-web.com/support/reportProblem.php", {username : $scope.user.username, email: $scope.user.email, message: reportProblemText.value}).then(function (res){
+            var alertPopup = $ionicPopup.alert({
+                title: 'Problem Reported',
+                template: "Thank you for reporting this problem to us. It will be attended to immedietly."
+            });
+        });
+
+    }
+
+})
+
+
+.controller('ResetPasswordCtrl', function($scope, $timeout, $stateParams, ionicMaterialInk, $state, $firebaseAuth, $ionicPopup) {
+    $scope.$parent.clearFabs();
+    $timeout(function() {
+        $scope.$parent.hideHeader();
+        
+    }, 0);
+    ionicMaterialInk.displayEffect();
+
+    var txtEmail = document.getElementById('emailText');
+   // const txtPassword = document.getElementsByClassName('md-input')[1];
+   // const btnLogin =  document.getElementById('loginButton');
+
+    var auth = $firebaseAuth();
+    var ref = firebase.database().ref().child("users");
+    console.log(txtEmail);
+    $scope.resetPassword = function() {
+    
+
+    $scope.message = null;
+    $scope.error = null;
+      // Create a new user
+    
+      auth.$sendPasswordResetEmail(txtEmail.value)
+        .then(function() {
+            
+           //email sent
+            var alertPopup = $ionicPopup.alert({
+                title: 'Check Your Mail',
+                template: "A message has been sent to your email."
+            });
+            $state.go('app.login');
+        }).catch(function(error) {
+            $scope.error = error;
+            console.log($scope.error);
+            console.log(txtEmail.value);
+            var alertPopup = $ionicPopup.alert({
+                title: 'Please try again.',
+                template: $scope.error.message
+            });
+    
+        });
+    };
 })
 
 ;

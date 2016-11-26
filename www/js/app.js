@@ -295,6 +295,26 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ionic-material', 'io
             }
         }
     })
+
+    .state('app.report_a_problem', {
+        url: '/report_a_problem',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/report_a_problem.html',
+                controller: 'ReportAProblemCtrl'
+            }
+        }
+    })
+
+    .state('app.reset_password', {
+        url: '/reset_password',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/reset_password.html',
+                controller: 'ResetPasswordCtrl'
+            }
+        }
+    })
     ;
 
     // if none of the above states are matched, use this as the fallback
