@@ -7,6 +7,74 @@ h1 {
 }
 
 
+/* Fixes
+==================================*/
+.hero {
+  max-height: 180px;
+}
+
+.hero h3 {
+  margin-bottom: 20px;
+}
+
+.hero.no-header {
+    height: auto;
+    min-height: 50px;
+}
+
+.aboutWrapper {
+padding: 20px;
+padding-bottom: 81px;
+}
+
+.bar-footer {
+    bottom: 0;
+    border-top-width: 0px;
+    border-bottom-width: 0;
+    background-position: top;
+    height: auto;
+}
+
+.tabs {
+  padding-top: 2px;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-bottom: 3px;
+}
+
+.hero>.content>.avatar {
+  border: none;
+}
+
+.upgrade p, .upgrade h2, .upgrade .assertive {
+  padding-left: 10px;
+
+}
+
+#fab {
+  margin-bottom: 40px;
+  margin-right: -10px;
+}
+textarea::-webkit-input-placeholder {
+   padding-left: 2px;
+}
+
+textarea:-moz-placeholder { /* Firefox 18- */
+   padding-left: 2px;
+}
+
+textarea::-moz-placeholder {  /* Firefox 19+ */
+   padding-left: 2px;
+}
+
+textarea:-ms-input-placeholder {
+   padding-left: 2px;
+}
+
+
+
+
+
 /* Utilities
 ==================================*/
 .title-bordered {
