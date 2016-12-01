@@ -429,11 +429,14 @@ var usersRef = firebase.database().ref().child("users");
 
         var usersRef = firebase.database().ref().child("users");
     var users = $firebaseArray(usersRef);
-    
+
+    $scope.explorePosts = {};
+
     users.$loaded().then( function(){
 
         $scope.posts.$loaded()
             .then(function(){
+                initExplorePage();
                 angular.forEach($scope.posts, function(post) {
                     console.log(post);
                     post.username = users.$getRecord(post.userID).username;
@@ -447,11 +450,48 @@ var usersRef = firebase.database().ref().child("users");
                     post.touch =  $.map(post.touch, function(value, index) {
                                     return [value];
                     });
-                   
+
             })
         });
 
     });
+
+    function initExplorePage() {
+        angular.forEach($scope.posts, function(post) {
+            if (post.touch) {
+                var postUser = users.$getRecord(post.userID);
+                if (postUser.halo) {
+                    console.log(users.$getRecord(post.userID));
+                    if (postUser.halo == 'Bronze Silver') {
+                        if (!$scope.explorePosts.haloBronze) {
+                            $scope.explorePosts.haloBronze = post;
+                        } else if ($scope.explorePosts.haloBronze.touch.length < post.touch.length) {
+                            $scope.explorePosts.haloBronze = post;
+                        }
+                    } else if (postUser.halo == 'Halo Silver') {
+                        if (!$scope.explorePosts.haloSilver) {
+                            $scope.explorePosts.haloSilver = post;
+                        } else if ($scope.explorePosts.haloSilver.touch.length < post.touch.length) {
+                            $scope.explorePosts.haloSilver = post;
+                        }
+                    }  else if (postUser.halo == 'Halo Gold') {
+                        if (!$scope.explorePosts.haloGold) {
+                            $scope.explorePosts.haloGold = post;
+                        } else if ($scope.explorePosts.haloGold.touch.length < post.touch.length) {
+                            $scope.explorePosts.haloGold = post;
+                        }
+                    }
+                } else {
+                    if (!$scope.explorePosts.noHalo) {
+                        $scope.explorePosts.noHalo = post;
+                    } else if ($scope.explorePosts.noHalo.touch.length < post.touch.length) {
+                        $scope.explorePosts.noHalo = post;
+                    }
+                }
+
+            }
+        });
+    }
 
     $scope.viewUserProfile = function(uid){
         otherUserID = uid;
@@ -513,7 +553,7 @@ var usersRef = firebase.database().ref().child("users");
                         post.touch =  $.map(post.touch, function(value, index) {
                                         return [value];
                         });
-                    
+
                 })
             });
 

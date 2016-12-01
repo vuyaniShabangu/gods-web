@@ -1,6 +1,5 @@
 <ion-view view-title="Explore God's Web">
     <ion-content ng-class="{expanded:isExpanded}" class="animate-fade-slide-in">
-
         <div class="item card-item" ng-repeat="post in posts | orderBy:'touch.length':true | limitTo:1">
             <div class="card stable-bg ink ink-prim" >
                 <div class="item item-avatar item-text-wrap">
@@ -18,72 +17,72 @@
             </div>
         </div>
 
-        <div class="item card-item" ng-repeat="post in posts | orderBy:'touch.length':true | limitTo:1">
+        <div class="item card-item" ng-if="explorePosts.haloGold">
             <div class="card stable-bg ink ink-gold" >
                 <div class="item item-avatar item-text-wrap">
-                    <span class="avatar" ng-click="viewUserProfile('{{post.userID}}')" style="background-image: url('{{post.userProfilePic}}');"></span>
-                    <strong ng-click="viewUserProfile('{{post.userID}}')">{{post.username}}</strong> <p>{{post.text}}</p>
+                    <span class="avatar" ng-click="viewUserProfile('{{explorePosts.haloGold.userID}}')" style="background-image: url('{{explorePosts.haloGold.userProfilePic}}');"></span>
+                    <strong ng-click="viewUserProfile('{{explorePosts.haloGold.userID}}')">{{post.username}}</strong> <p>{{explorePosts.haloGold.text}}</p>
                     <div class="card-footer text-right">
-                        <span ng-click="amen({{post}})">🙏 {{post.amen.length}} &nbsp; </span> <span ng-click="hallelujah({{post}})"> 🙌 {{post.hallelujah.length}} &nbsp; </span>
-                        <span><i class="icon ion-heart assertive" ng-click="touch({{post}})"></i> {{post.touch.length}}</span>
+                        <span ng-click="amen({{explorePosts.haloGold}})">🙏 {{explorePosts.haloGold.amen.length}} &nbsp; </span> <span ng-click="hallelujah({{explorePosts.haloGold}})"> 🙌 {{explorePosts.haloGold.hallelujah.length}} &nbsp; </span>
+                        <span><i class="icon ion-heart assertive" ng-click="touch({{explorePosts.haloGold}})"></i> {{explorePosts.haloGold.touch.length}}</span>
                         <div class="pull-left" >
-                            <i class="icon ion-clock"></i> <span am-time-ago="post.timestamp"></span>
+                            <i class="icon ion-clock"></i> <span am-time-ago="explorePosts.haloGold.timestamp"></span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-       <div class="item card-item" ng-repeat="post in posts | orderBy:'touch.length':true | limitTo:1">
+       <div class="item card-item" ng-if="explorePosts.haloSilver">
             <div class="card stable-bg ink ink-silver" >
                 <div class="item item-avatar item-text-wrap">
-                    <span class="avatar" ng-click="viewUserProfile('{{post.userID}}')" style="background-image: url('{{post.userProfilePic}}');"></span>
-                    <strong ng-click="viewUserProfile('{{post.userID}}')">{{post.username}}</strong> <p>{{post.text}}</p>
+                    <span class="avatar" ng-click="viewUserProfile('{{explorePosts.haloSilver.userID}}')" style="background-image: url('{{explorePosts.haloSilver.userProfilePic}}');"></span>
+                    <strong ng-click="viewUserProfile('{{explorePosts.haloSilver.userID}}')">{{explorePosts.haloSilver.username}}</strong> <p>{{explorePosts.haloSilver.text}}</p>
                     <div class="card-footer text-right">
-                        <span ng-click="amen({{post}})">🙏 {{post.amen.length}} &nbsp; </span> <span ng-click="hallelujah({{post}})"> 🙌 {{post.hallelujah.length}} &nbsp; </span>
-                        <span><i class="icon ion-heart assertive" ng-click="touch({{post}})"></i> {{post.touch.length}}</span>
+                        <span ng-click="amen({{explorePosts.haloSilver}})">🙏 {{explorePosts.haloSilver.amen.length}} &nbsp; </span> <span ng-click="hallelujah({{explorePosts.haloSilver}})"> 🙌 {{explorePosts.haloSilver.hallelujah.length}} &nbsp; </span>
+                        <span><i class="icon ion-heart assertive" ng-click="touch({{explorePosts.haloSilver}})"></i> {{explorePosts.haloSilver.touch.length}}</span>
                         <div class="pull-left" >
-                            <i class="icon ion-clock"></i> <span am-time-ago="post.timestamp"></span>
+                            <i class="icon ion-clock"></i> <span am-time-ago="explorePosts.haloSilver.timestamp"></span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="item card-item" ng-repeat="post in posts | orderBy:'touch.length':true | limitTo:1">
+        <div class="item card-item" ng-if="explorePosts.haloBronze">
             <div class="card stable-bg ink ink-bronze" >
                 <div class="item item-avatar item-text-wrap">
-                    <span class="avatar" ng-click="viewUserProfile('{{post.userID}}')" style="background-image: url('{{post.userProfilePic}}');"></span>
-                    <strong ng-click="viewUserProfile('{{post.userID}}')">{{post.username}}</strong> <p>{{post.text}}</p>
+                    <span class="avatar" ng-click="viewUserProfile('{{explorePosts.haloBronze.userID}}')" style="background-image: url('{{explorePosts.haloBronze.userProfilePic}}');"></span>
+                    <strong ng-click="viewUserProfile('{{explorePosts.haloBronze.userID}}')">{{explorePosts.haloBronze.username}}</strong> <p>{{explorePosts.haloBronze.text}}</p>
                     <div class="card-footer text-right">
-                        <span ng-click="amen({{post}})">🙏 {{post.amen.length}} &nbsp; </span> <span ng-click="hallelujah({{post}})"> 🙌 {{post.hallelujah.length}} &nbsp; </span>
-                        <span><i class="icon ion-heart assertive" ng-click="touch({{post}})"></i> {{post.touch.length}}</span>
+                        <span ng-click="amen({{explorePosts.haloBronze}})">🙏 {{explorePosts.haloBronze.amen.length}} &nbsp; </span> <span ng-click="hallelujah({{explorePosts.haloBronze}})"> 🙌 {{explorePosts.haloBronze.hallelujah.length}} &nbsp; </span>
+                        <span><i class="icon ion-heart assertive" ng-click="touch({{explorePosts.haloBronze}})"></i> {{explorePosts.haloBronze.touch.length}}</span>
                         <div class="pull-left" >
-                            <i class="icon ion-clock"></i> <span am-time-ago="post.timestamp"></span>
+                            <i class="icon ion-clock"></i> <span am-time-ago="explorePosts.haloBronze.timestamp"></span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-               <div class="item card-item" ng-repeat="post in posts | orderBy:'touch.length':true | limitTo:1">
+        <div class="item card-item" ng-if="explorePosts.noHalo">
             <div class="card stable-bg ink ink-light" >
                 <div class="item item-avatar item-text-wrap">
-                    <span class="avatar" ng-click="viewUserProfile('{{post.userID}}')" style="background-image: url('{{post.userProfilePic}}');"></span>
-                    <strong ng-click="viewUserProfile('{{post.userID}}')">{{post.username}}</strong> <p>{{post.text}}</p>
+                    <span class="avatar" ng-click="viewUserProfile('{{explorePosts.noHalo.userID}}')" style="background-image: url('{{explorePosts.noHalo.userProfilePic}}');"></span>
+                    <strong ng-click="viewUserProfile('{{explorePosts.noHalo.userID}}')">{{explorePosts.noHalo.username}}</strong> <p>{{explorePosts.noHalo.text}}</p>
                     <div class="card-footer text-right">
-                        <span ng-click="amen({{post}})">🙏 {{post.amen.length}} &nbsp; </span> <span ng-click="hallelujah({{post}})"> 🙌 {{post.hallelujah.length}} &nbsp; </span>
-                        <span><i class="icon ion-heart assertive" ng-click="touch({{post}})"></i> {{post.touch.length}}</span>
+                        <span ng-click="amen({{explorePosts.noHalo}})">🙏 {{explorePosts.noHalo.amen.length}} &nbsp; </span> <span ng-click="hallelujah({{explorePosts.noHalo}})"> 🙌 {{explorePosts.noHalo.hallelujah.length}} &nbsp; </span>
+                        <span><i class="icon ion-heart assertive" ng-click="touch({{explorePosts.noHalo}})"></i> {{explorePosts.noHalo.touch.length}}</span>
                         <div class="pull-left" >
-                            <i class="icon ion-clock"></i> <span am-time-ago="post.timestamp"></span>
+                            <i class="icon ion-clock"></i> <span am-time-ago="explorePosts.noHalo.timestamp"></span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-     
-        
+
+
     </ion-content>
             <ion-footer-bar>
        <div class="tabs tabs-dark tabs-icon-top static">
