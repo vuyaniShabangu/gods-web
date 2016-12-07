@@ -1,21 +1,5 @@
 <ion-view view-title="Explore God's Web">
     <ion-content ng-class="{expanded:isExpanded}" class="animate-fade-slide-in">
-        <div class="item card-item" ng-repeat="post in posts | orderBy:'touch.length':true | limitTo:1">
-            <div class="card stable-bg ink ink-prim" >
-                <div class="item item-avatar item-text-wrap">
-                    <span class="avatar" ng-click="viewUserProfile('{{post.userID}}')" style="background-image: url('{{post.userProfilePic}}');"></span>
-                    <h2>Word of The Day</h2>
-                    <strong ng-click="viewUserProfile('{{post.userID}}')">{{post.username}}</strong> <p>{{post.text}}</p>
-                    <div class="card-footer text-right">
-                        <span ng-click="amen({{post}})">🙏 {{post.amen.length}} &nbsp; </span> <span ng-click="hallelujah({{post}})"> 🙌 {{post.hallelujah.length}} &nbsp; </span>
-                        <span><i class="icon ion-heart assertive" ng-click="touch({{post}})"></i> {{post.touch.length}}</span>
-                        <div class="pull-left" >
-                            <i class="icon ion-clock"></i> <span am-time-ago="post.timestamp"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <div class="item card-item" ng-if="explorePosts.haloGold">
             <div class="card stable-bg ink ink-gold" >
