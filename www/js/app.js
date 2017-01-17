@@ -14,7 +14,7 @@
   };
   firebase.initializeApp(config);
 
-angular.module('starter', ['ionic', 'starter.controllers', 'ionic-material', 'ionMdInput', 'firebase', 'angularMoment'])
+angular.module('starter', ['ionic', 'starter.controllers', 'ionic-material', 'ionMdInput', 'firebase', 'angularMoment','ionic.cloud'])
 
 .run(function($ionicPlatform) {
     $ionicPlatform.ready(function() {
@@ -25,15 +25,36 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ionic-material', 'io
         }
         if (window.StatusBar) {
             // org.apache.cordova.statusbar required
-            StatusBar.styleDefault();
+            //StatusBar.styleDefault();
+            StatusBar.backgroundColorByHexString('#20B2AA');
         }
     });
 })
 
-.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
+.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider, $ionicCloudProvider) {
 
     // Turn off caching for demo simplicity's sake
     $ionicConfigProvider.views.maxCache(0);
+    
+    //Initialize the cloud provider
+    $ionicCloudProvider.init({
+        "core": {
+        "app_id": "e460e997"
+            },
+        "push": {
+        "sender_id": "353628194694",
+        "pluginConfig": {
+            "ios": {
+            "badge": true,
+            "sound": true
+            },
+            "android": {
+            "iconColor": "#343434"
+            }
+        }
+        }
+    });
+
 
     /*
     // Turn off back button text

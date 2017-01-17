@@ -22,6 +22,11 @@ angular.module('starter.controllers', [])
         });
     }
 
+    $scope.$on('cloud:push:notification', function(event, data) {
+        var msg = data.message;
+        alert(msg.title + ': ' + msg.text);
+    });
+
     ////////////////////////////////////////
     // Layout Methods
     ////////////////////////////////////////
@@ -101,7 +106,7 @@ angular.module('starter.controllers', [])
     }
 })
 
-.controller('LoginCtrl', function($scope, $timeout, $stateParams, ionicMaterialInk, $state, $firebaseAuth, $ionicPopup) {
+.controller('LoginCtrl', function($scope, $timeout, $stateParams, ionicMaterialInk, $state, $firebaseAuth, $ionicPopup, $ionicPush) {
     $scope.$parent.clearFabs();
     $timeout(function() {
         $scope.$parent.hideHeader();
@@ -126,6 +131,10 @@ angular.module('starter.controllers', [])
             
             console.log("User signed in with uid: " + firebaseUser.uid);
             userID = firebaseUser.uid;
+
+            $ionicPush.register().then(function(t) {
+                return $ionicPush.saveToken(t);
+            });
 
             $state.go('app.profile');
         }).catch(function(error) {
