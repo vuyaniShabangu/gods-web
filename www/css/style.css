@@ -144,6 +144,20 @@ p {
 
 }
 
+.login-screen, .signup-screen{
+    background-image: url(../img/login-bg2.jpg);
+background-size: cover;
+    padding-top: 130px;
+}
+
+.login-input input, .signup-input input{
+    background-color: white;
+    border-radius: 4px;
+    color:#7f7f7f;
+}
+
+.item-md-label.login-input span.input-label, .item-md-label.signup-input span.input-label {color:#7f7f7f;}
+
 .social-login {
     position: fixed;
     bottom: 0;
@@ -217,4 +231,58 @@ h4{
 
 .button-energized-900{
     background-color: #0abdc7 !important;
+}
+
+/* Devotions
+==================================*/
+.list.devotions{
+    margin-bottom: 1px;    
+}
+
+.devotion-item-body{
+    padding: 0;
+    max-height: 200px;
+    height: 200px;
+}
+
+.devotion-item-body::before{
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.03) -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0,0,0,0.75)),color-stop(30%, rgba(0,0,0,0.75)),color-stop(100%, rgba(0,0,0,0)));
+    background: rgba(0,0,0,0.03) -webkit-linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75) 30%,rgba(0,0,0,0) 100%);
+    background: rgba(0,0,0,0.03) linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75) 30%,rgba(0,0,0,0) 100%);
+    bottom: 0;
+}
+
+.devotion-item-body img
+{
+
+}
+
+.devotion-item-body h2
+{
+        font-size: 1.6em;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+        padding: 16px;
+    color: #fff;
+}
+
+/* Events
+==================================*/
+.item-input.custom-input{
+    padding: 0;
+}
+
+.item-input.custom-input input{
+    background-color:transparent; 
+    border-bottom: solid 1px #0a9ec7;
+}
+
+.lg-bg{
+    background-color: #f2f2f2;
 }

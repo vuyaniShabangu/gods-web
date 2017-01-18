@@ -2,8 +2,8 @@
     <ion-content ng-class="{expanded:isExpanded}" class="animate-fade-slide-in">
 
         <div class="list card animate-fade-slide-in-right" ng-repeat="(id,event) in events">
-            <a ng-click="viewEvent({{event}})" class="item item-body  in" >
-                <img ng-src="{{event.image}}" class="full-image">
+            <img ng-src="{{event.image}}" class="full-image">
+            <a ng-click="viewEvent({{event}})" class="item item-body  in" >                
                 <h2>{{event.eventName}}</h2>
                 <p>{{event.eventDesc}}</p>
                 <i class="icon ion-android-calendar"></i>

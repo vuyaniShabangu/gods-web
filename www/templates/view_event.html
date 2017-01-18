@@ -3,8 +3,8 @@
 
 
         <div class="list card animate-fade-slide-in-right">
-            <a class="item item-body  in" >
-                <img ng-src="{{event.image}}" class="full-image">
+            <img ng-src="{{event.image}}" class="full-image">
+            <a class="item item-body  in" >                
                 <h2>{{event.eventName}}</h2>
                 <p>{{event.eventDesc}}</p>
                 <i class="icon ion-android-calendar"></i>
@@ -17,11 +17,11 @@
                             R{{event.eventPrice}}
                  
            </a>
-           <div class="card-footer text-right">
-                <label class=" item-input">
-                    <input type="number" min=1 placeholder="Number of Seats" id="numOfSeats" autofocus style="background-color:#bbe8e5; border: solid 1px #0a9ec7;">
+           <div class="card-footer padding lg-bg text-right">
+                <label class=" item-input custom-input">
+                    <input type="number" min=1 placeholder="Number of Seats" id="numOfSeats" autofocus >
                 </label>
-                <button class="button button-small button-calm ink" id="bookButton" ng-click="book();">Book</button>
+                <button class="button button-full button-calm ink" id="bookButton" ng-click="book();">Book</button>
             </div>
         </div>
 

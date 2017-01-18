@@ -1,23 +1,13 @@
 <ion-view view-title="Daily Devotionals">
     <ion-content ng-class="{expanded:$scope.isExpanded}" scroll="scroll" class="has-footer">
 
-        <div class="list card" ng-repeat="devCat in devotionalCategories">
+        <div class="list devotions" ng-repeat="devCat in devotionalCategories">
 
 
-            <div class="item item-body" ng-click="viewCategory(devCat);">
+            <div class="item devotion-item-body" ng-click="viewCategory(devCat);">
                 <img class="full-image" ng-src="{{devCat.imageURL}}">
-               <!-- <p>
-                This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
-                the content is from a card-body consisting of an image and paragraph text. The footer
-                consists of tabs, icons aligned left, within the card-footer.
-                </p>-->
-                <p>
-                    <!--<a href="http://www.gods-web.com" class="subdued">God's Web Online</a>-->
                     <h2>{{devCat.name}}</h2>
-                </p>
-   
             </div>
-
         </div>
 
 
