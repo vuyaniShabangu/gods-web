@@ -1,0 +1,1091 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="00391c82-6ace-4032-b1df-0b1f24bc4640" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/images/ui-bg_flat_0_aaaaaa_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/images/ui-bg_flat_75_ffffff_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/images/ui-bg_glass_55_fbf9ee_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/images/ui-bg_glass_65_ffffff_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/images/ui-bg_glass_75_dadada_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/images/ui-bg_glass_75_e6e6e6_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/images/ui-bg_glass_95_fef1ec_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/images/ui-bg_highlight-soft_75_cccccc_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/images/ui-icons_222222_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/images/ui-icons_2e83ff_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/images/ui-icons_444444_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/images/ui-icons_454545_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/images/ui-icons_555555_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/images/ui-icons_777620_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/images/ui-icons_777777_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/images/ui-icons_888888_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/images/ui-icons_cc0000_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/images/ui-icons_cd0a0a_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/images/ui-icons_ffffff_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/img/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/img/progressbar.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/basic/close.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/basic/column-asc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/basic/column-desc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/basic/column-sortable.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/basic/delete.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/basic/edit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/jqueryui/add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/jqueryui/bg-thead.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/jqueryui/close.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/jqueryui/column-asc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/jqueryui/column-desc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/jqueryui/column-sortable.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/jqueryui/delete.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/jqueryui/edit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/jqueryui/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/lightcolor/add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/lightcolor/bg-thead.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/lightcolor/blue/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/lightcolor/close.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/lightcolor/column-asc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/lightcolor/column-desc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/lightcolor/column-sortable.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/lightcolor/delete.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/lightcolor/edit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/lightcolor/gray/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/lightcolor/green/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/lightcolor/orange/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/lightcolor/red/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/metro/add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/metro/blue/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/metro/brown/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/metro/close.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/metro/column-asc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/metro/column-desc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/metro/column-sortable.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/metro/crimson/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/metro/darkgray/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/metro/darkorange/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/metro/delete.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/metro/edit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/metro/green/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/metro/lightgray/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/metro/pink/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/metro/purple/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/metro/red/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/php.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/canvas-to-blob.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.blueimp-gallery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.fileupload-angular.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.fileupload-audio.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.fileupload-image.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.fileupload-jquery-ui.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.fileupload-process.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.fileupload-ui.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.fileupload-validate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.fileupload-video.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.fileupload.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.iframe-transport.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.jtable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.jtable.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.ui.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.ui.widget.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/load-image.all.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/material.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/tmpl.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/add_admin.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/add_church.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/css/material_icons.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/css/roboto.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/edit_admin.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/edit_church.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/page_master.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/AdministratorsScript.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/ChurchesScript.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/DevotionalsScripts.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/SummaryScript.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/connection.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/helpers/encryption.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/helpers/fileupload.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/cards.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/jquery-ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/jquery-ui.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/jquery-ui.structure.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/jquery-ui.structure.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/jquery-ui.theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/jquery-ui.theme.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/jquery.fileupload-ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/jquery.fileupload.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/material_style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/mdb.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/basic/jtable_basic.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/basic/jtable_basic.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/basic/jtable_basic.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/jqueryui/jtable_jqueryui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/jqueryui/jtable_jqueryui.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/jqueryui/jtable_jqueryui.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/jtable_theme_base.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/lightcolor/blue/jtable.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/lightcolor/blue/jtable.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/lightcolor/blue/jtable.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/lightcolor/gray/jtable.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/lightcolor/gray/jtable.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/lightcolor/gray/jtable.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/lightcolor/green/jtable.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/lightcolor/green/jtable.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/lightcolor/green/jtable.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/lightcolor/jtable_lightcolor_base.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/lightcolor/orange/jtable.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/lightcolor/orange/jtable.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/lightcolor/orange/jtable.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/lightcolor/red/jtable.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/lightcolor/red/jtable.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/lightcolor/red/jtable.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/metro/blue/jtable.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/metro/blue/jtable.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/metro/blue/jtable.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/metro/brown/jtable.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/metro/brown/jtable.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/metro/brown/jtable.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/metro/crimson/jtable.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/metro/crimson/jtable.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/metro/crimson/jtable.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/metro/darkgray/jtable.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/metro/darkgray/jtable.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/metro/darkgray/jtable.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/metro/darkorange/jtable.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/metro/darkorange/jtable.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/metro/darkorange/jtable.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/metro/green/jtable.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/metro/green/jtable.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/metro/green/jtable.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/metro/jtable_metro_base.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/metro/jtable_metro_base.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/metro/jtable_metro_base.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/metro/lightgray/jtable.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/metro/lightgray/jtable.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/metro/lightgray/jtable.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/metro/pink/jtable.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/metro/pink/jtable.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/metro/pink/jtable.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/metro/purple/jtable.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/metro/purple/jtable.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/metro/purple/jtable.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/metro/red/jtable.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/metro/red/jtable.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/themes/metro/red/jtable.min.css" />
+    </list>
+    <ignored path="godsweb.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="godsweb" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="churches.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/churches.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="21" column="51" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit_church.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/edit_church.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="45" column="14" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
+              <folding>
+                <element signature="e#104#144#0#HTML" expanded="true" />
+                <element signature="e#162#185#0#HTML" expanded="true" />
+                <element signature="e#389#408#0#HTML" expanded="true" />
+                <element signature="e#2058#2084#0#HTML" expanded="true" />
+                <element signature="e#2220#2260#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChurchesScript.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/ChurchesScript.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="55" column="8" selection-start-line="55" selection-start-column="8" selection-end-line="66" selection-end-column="63" />
+              <folding>
+                <element signature="n#insertChurch#0;n#Church#0;n#!!top" expanded="false" />
+                <element signature="n#updateChurch#0;n#Church#0;n#!!top" expanded="false" />
+                <element signature="n#deleteChurch#0;n#Church#0;n#!!top" expanded="false" />
+                <marker date="1485982329811" expanded="true" signature="1018:1055" ph="SELECT * FRO... church" />
+                <marker date="1485982329811" expanded="false" signature="1411:1789" ph="{...}" />
+                <marker date="1485982329811" expanded="true" signature="1459:1506" ph="SELECT * FRO... church" />
+                <marker date="1485982329811" expanded="true" signature="1841:1921" ph="INSERT INTO church... " />
+                <marker date="1485982329811" expanded="true" signature="4318:4402" ph="UPDATE admin... " />
+                <marker date="1485982329811" expanded="true" signature="4946:5005" ph="UPDATE admin... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cards.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/styles/cards.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/home.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="177" column="88" selection-start-line="177" selection-start-column="88" selection-end-line="177" selection-end-column="88" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SummaryScript.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/SummaryScript.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="376">
+              <caret line="94" column="36" selection-start-line="94" selection-start-column="36" selection-end-line="94" selection-end-column="36" />
+              <folding>
+                <marker date="1485987371247" expanded="true" signature="839:900" ph="SELECT * FRO... church" />
+                <marker date="1485987371247" expanded="true" signature="1306:1347" ph="SELECT * FRO... church" />
+                <marker date="1485987371247" expanded="true" signature="1306:1370" ph="SELECT * FRO... devotions" />
+                <marker date="1485987371247" expanded="true" signature="1773:1841" ph="SELECT * FRO... administrator" />
+                <marker date="1485987371247" expanded="true" signature="2244:2305" ph="SELECT * FRO... events" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="master.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/master.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="183">
+              <caret line="69" column="27" selection-start-line="69" selection-start-column="20" selection-end-line="69" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="material_style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/styles/material_style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="199">
+              <caret line="7" column="120494" selection-start-line="7" selection-start-column="120494" selection-end-line="7" selection-end-column="120494" />
+              <folding>
+                <element signature="e#50151#51852#2" expanded="true" />
+                <element signature="e#51858#53559#2" expanded="true" />
+                <element signature="e#53760#54657#1" expanded="true" />
+                <element signature="e#54821#55718#1" expanded="true" />
+                <element signature="e#77362#77963#2" expanded="true" />
+                <element signature="e#77969#78570#2" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fileupload.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/helpers/fileupload.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="520">
+              <caret line="42" column="1" selection-start-line="1" selection-start-column="0" selection-end-line="42" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add_church.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/add_church.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="45" selection-end-column="14" />
+              <folding>
+                <element signature="e#104#144#0#HTML" expanded="true" />
+                <element signature="e#162#185#0#HTML" expanded="true" />
+                <element signature="e#418#437#0#HTML" expanded="true" />
+                <element signature="e#2087#2113#0#HTML" expanded="true" />
+                <element signature="e#4254#4294#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/scripts/connection.php" />
+        <option value="$PROJECT_DIR$/styles.css" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/js/login.js" />
+        <option value="$PROJECT_DIR$/styles/jquery.ui.all.css" />
+        <option value="$PROJECT_DIR$/js/jquery.min.js" />
+        <option value="$PROJECT_DIR$/js/jquery.ui.min.js" />
+        <option value="$PROJECT_DIR$/scripts/response.php" />
+        <option value="$PROJECT_DIR$/js/jquery.jtable.js" />
+        <option value="$PROJECT_DIR$/styles/themes/basic/jtable_basic.css" />
+        <option value="$PROJECT_DIR$/scripts/DevotionalsScripts.php" />
+        <option value="$PROJECT_DIR$/scripts/helpers/encryption.php" />
+        <option value="$PROJECT_DIR$/scripts/login.php" />
+        <option value="$PROJECT_DIR$/pages/css/material_icons.css" />
+        <option value="$PROJECT_DIR$/pages/css/roboto.css" />
+        <option value="$PROJECT_DIR$/styles/material_style.css" />
+        <option value="$PROJECT_DIR$/styles/styles.css" />
+        <option value="$PROJECT_DIR$/js/material.min.js" />
+        <option value="$PROJECT_DIR$/master.php" />
+        <option value="$PROJECT_DIR$/pages/add_admin.php" />
+        <option value="$PROJECT_DIR$/administrators.php" />
+        <option value="$PROJECT_DIR$/pages/edit_admin.php" />
+        <option value="$PROJECT_DIR$/churches.php" />
+        <option value="$PROJECT_DIR$/scripts/AdministratorsScript.php" />
+        <option value="$PROJECT_DIR$/styles/jquery.fileupload-ui.css" />
+        <option value="$PROJECT_DIR$/styles/jquery.fileupload.css" />
+        <option value="$PROJECT_DIR$/js/jquery.blueimp-gallery.min.js" />
+        <option value="$PROJECT_DIR$/js/canvas-to-blob.min.js" />
+        <option value="$PROJECT_DIR$/js/load-image.all.min.js" />
+        <option value="$PROJECT_DIR$/js/tmpl.min.js" />
+        <option value="$PROJECT_DIR$/pages/page_master.php" />
+        <option value="$PROJECT_DIR$/scripts/helpers/fileupload.php" />
+        <option value="$PROJECT_DIR$/pages/add_church.php" />
+        <option value="$PROJECT_DIR$/pages/edit_church.php" />
+        <option value="$PROJECT_DIR$/scripts/ChurchesScript.php" />
+        <option value="$PROJECT_DIR$/styles/cards.css" />
+        <option value="$PROJECT_DIR$/home.php" />
+        <option value="$PROJECT_DIR$/scripts/SummaryScript.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpServers">
+    <servers>
+      <server host="http://localhost" id="4d1cfbd4-db43-4e3b-903c-7404d6a89f80" name="Apache" port="90" />
+    </servers>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 7" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="godsweb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="godsweb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="godsweb" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../jtable" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\godsweb\styles" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\godsweb\js" />
+      <recent name="C:\xampp\htdocs\godsweb\styles" />
+      <recent name="C:\xampp\htdocs\godsweb\styles\images" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.index.php">
+    <configuration default="false" name="index.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/godsweb/index.php">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.php" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.php" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="00391c82-6ace-4032-b1df-0b1f24bc4640" name="Default" comment="" />
+      <created>1485781533165</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1485781533165</updated>
+      <workItem from="1485781535458" duration="7476000" />
+      <workItem from="1485791470986" duration="40385000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="47861000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1727672" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2496329" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39905363" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17327459" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39905363" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="5" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/styles/jquery.ui.all.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery.jtable.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/jquery-ui.theme.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187119">
+          <caret line="11007" column="4" selection-start-line="11007" selection-start-column="4" selection-end-line="11007" selection-end-column="4" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/login_index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1377">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery.ui.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="18705" column="4" selection-start-line="18705" selection-start-column="4" selection-end-line="18705" selection-end-column="4" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/Church.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/Administrator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-709">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/Devotion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/Event.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/response.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="33" selection-start-line="0" selection-start-column="0" selection-end-line="103" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/DevotionalsScripts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="79" column="5" selection-start-line="0" selection-start-column="0" selection-end-line="103" selection-end-column="2" />
+          <folding>
+            <marker date="1485795908878" expanded="true" signature="841:861" ph="SELECT * FRO... church" />
+            <marker date="1485795908878" expanded="true" signature="1488:1591" ph="INSERT INTO people... " />
+            <marker date="1485795908878" expanded="true" signature="1686:1740" ph="SELECT * FRO... people" />
+            <marker date="1485795908878" expanded="true" signature="2092:2188" ph="UPDATE peopl... " />
+            <marker date="1485795908878" expanded="true" signature="2477:2513" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/mdb.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery.jtable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="354" column="78" selection-start-line="354" selection-start-column="59" selection-end-line="354" selection-end-column="78" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1485795475539" expanded="true" signature="113809:113841" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/themes/basic/jtable_basic.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="220" column="53" selection-start-line="220" selection-start-column="53" selection-end-line="220" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/helpers/encryption.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="184" selection-start-line="7" selection-start-column="184" selection-end-line="7" selection-end-column="184" />
+          <folding>
+            <marker date="1485875122454" expanded="true" signature="157:312" ph="SELECT id, n... administrator" />
+            <marker date="1485875122454" expanded="true" signature="157:329" ph="SELECT id, n... administrator" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/css/material_icons.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/css/roboto.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="537">
+          <caret line="447" column="1" selection-start-line="447" selection-start-column="1" selection-end-line="447" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="231" column="16" selection-start-line="231" selection-start-column="16" selection-end-line="231" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/material.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="843">
+          <caret line="8" column="12395" selection-start-line="8" selection-start-column="12379" selection-end-line="8" selection-end-column="12395" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/devotionals.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GodsWeb.sln">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/events.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/edit_admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="64" column="73" selection-start-line="64" selection-start-column="73" selection-end-line="64" selection-end-column="73" />
+          <folding>
+            <element signature="e#104#144#0#HTML" expanded="false" />
+            <element signature="e#162#185#0#HTML" expanded="false" />
+            <element signature="e#2093#2133#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrators.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-646">
+          <caret line="19" column="62" selection-start-line="19" selection-start-column="62" selection-end-line="19" selection-end-column="62" />
+          <folding>
+            <element signature="e#103#142#0#HTML" expanded="true" />
+            <element signature="e#400#419#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/AdministratorsScript.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="81" column="34" selection-start-line="81" selection-start-column="34" selection-end-line="81" selection-end-column="34" />
+          <folding>
+            <element signature="n#getAdministrators#0;n#Administrator#0;n#!!top" expanded="false" />
+            <element signature="n#getAdministrator#0;n#Administrator#0;n#!!top" expanded="false" />
+            <element signature="n#insertAdministrator#0;n#Administrator#0;n#!!top" expanded="false" />
+            <element signature="n#updateAdministrator#0;n#Administrator#0;n#!!top" expanded="false" />
+            <element signature="n#deleteAdministrator#0;n#Administrator#0;n#!!top" expanded="false" />
+            <marker date="1485887814084" expanded="true" signature="1035:1079" ph="SELECT * FRO... administrator" />
+            <marker date="1485887814084" expanded="true" signature="1489:1542" ph="SELECT * FRO... administrator" />
+            <marker date="1485887814084" expanded="true" signature="1489:1543" ph="SELECT * FRO... administrator" />
+            <marker date="1485887814084" expanded="true" signature="1884:1974" ph="INSERT INTO administrator... " />
+            <marker date="1485887814084" expanded="true" signature="1884:2181" ph="INSERT INTO people... " />
+            <marker date="1485887814084" expanded="true" signature="2567:2662" ph="UPDATE admin... " />
+            <marker date="1485887814084" expanded="true" signature="2567:2862" ph="UPDATE admin... " />
+            <marker date="1485887814084" expanded="true" signature="3261:3326" ph="UPDATE admin... " />
+            <marker date="1485887814084" expanded="true" signature="3261:3327" ph="UPDATE admin... " />
+            <marker date="1485887814084" expanded="true" signature="3261:3391" ph="UPDATE admin... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/add_admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="60" column="9" selection-start-line="5" selection-start-column="4" selection-end-line="60" selection-end-column="9" />
+          <folding>
+            <element signature="e#104#144#0#HTML" expanded="false" />
+            <element signature="e#162#185#0#HTML" expanded="false" />
+            <element signature="e#447#466#0#HTML" expanded="false" />
+            <element signature="e#2138#2178#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/jquery.fileupload-ui.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10">
+          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/jquery.fileupload.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="55" column="1" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery.fileupload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery.blueimp-gallery.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="54" selection-start-line="1" selection-start-column="54" selection-end-line="1" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/canvas-to-blob.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="46" selection-start-line="1" selection-start-column="46" selection-end-line="1" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/load-image.all.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="46" selection-start-line="1" selection-start-column="46" selection-end-line="1" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/tmpl.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="36" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/page_master.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="76" column="23" selection-start-line="76" selection-start-column="23" selection-end-line="76" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery.ui.widget.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/helpers/fileupload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="42" column="1" selection-start-line="1" selection-start-column="0" selection-end-line="42" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/add_church.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="45" selection-end-column="14" />
+          <folding>
+            <element signature="e#104#144#0#HTML" expanded="true" />
+            <element signature="e#162#185#0#HTML" expanded="true" />
+            <element signature="e#418#437#0#HTML" expanded="true" />
+            <element signature="e#2087#2113#0#HTML" expanded="true" />
+            <element signature="e#4254#4294#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/edit_church.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="45" column="14" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
+          <folding>
+            <element signature="e#104#144#0#HTML" expanded="true" />
+            <element signature="e#162#185#0#HTML" expanded="true" />
+            <element signature="e#389#408#0#HTML" expanded="true" />
+            <element signature="e#2058#2084#0#HTML" expanded="true" />
+            <element signature="e#2220#2260#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/material_style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="7" column="120494" selection-start-line="7" selection-start-column="120494" selection-end-line="7" selection-end-column="120494" />
+          <folding>
+            <element signature="e#50151#51852#2" expanded="true" />
+            <element signature="e#51858#53559#2" expanded="true" />
+            <element signature="e#53760#54657#1" expanded="true" />
+            <element signature="e#54821#55718#1" expanded="true" />
+            <element signature="e#77362#77963#2" expanded="true" />
+            <element signature="e#77969#78570#2" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/cards.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/master.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="69" column="27" selection-start-line="69" selection-start-column="20" selection-end-line="69" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/ChurchesScript.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="55" column="8" selection-start-line="55" selection-start-column="8" selection-end-line="66" selection-end-column="63" />
+          <folding>
+            <element signature="n#insertChurch#0;n#Church#0;n#!!top" expanded="false" />
+            <element signature="n#updateChurch#0;n#Church#0;n#!!top" expanded="false" />
+            <element signature="n#deleteChurch#0;n#Church#0;n#!!top" expanded="false" />
+            <marker date="1485982329811" expanded="true" signature="1018:1055" ph="SELECT * FRO... church" />
+            <marker date="1485982329811" expanded="false" signature="1411:1789" ph="{...}" />
+            <marker date="1485982329811" expanded="true" signature="1459:1506" ph="SELECT * FRO... church" />
+            <marker date="1485982329811" expanded="true" signature="1841:1921" ph="INSERT INTO church... " />
+            <marker date="1485982329811" expanded="true" signature="4318:4402" ph="UPDATE admin... " />
+            <marker date="1485982329811" expanded="true" signature="4946:5005" ph="UPDATE admin... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/churches.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="21" column="51" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/SummaryScript.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="94" column="36" selection-start-line="94" selection-start-column="36" selection-end-line="94" selection-end-column="36" />
+          <folding>
+            <marker date="1485987371247" expanded="true" signature="839:900" ph="SELECT * FRO... church" />
+            <marker date="1485987371247" expanded="true" signature="1306:1347" ph="SELECT * FRO... church" />
+            <marker date="1485987371247" expanded="true" signature="1306:1370" ph="SELECT * FRO... devotions" />
+            <marker date="1485987371247" expanded="true" signature="1773:1841" ph="SELECT * FRO... administrator" />
+            <marker date="1485987371247" expanded="true" signature="2244:2305" ph="SELECT * FRO... events" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="177" column="88" selection-start-line="177" selection-start-column="88" selection-end-line="177" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

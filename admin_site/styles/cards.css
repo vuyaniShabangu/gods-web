@@ -1,0 +1,34 @@
+.demo-card-square.mdl-card {
+    width: 320px;
+    height: 320px;
+}
+
+.demo-card-square > .mdl-card__title_churches {
+    color: #fff;
+    background:
+            url('../assets/demos/dog.png') bottom right 15% no-repeat #46B6AC;
+}
+
+.demo-card-square > .mdl-card__title_devotionals {
+    color: #fff;
+    background:
+            url('../assets/demos/dog.png') bottom right 15% no-repeat #46B6AC;
+}
+
+.demo-card-square > .mdl-card__title_administrators {
+    color: #fff;
+    background:
+            url('../assets/demos/dog.png') bottom right 15% no-repeat #46B6AC;
+}
+
+.demo-card-square > .mdl-card__title_events {
+    color: #fff;
+    background:
+            url('../images/user.jpg') bottom right 15% no-repeat #46B6AC;
+}
+
+.demo-card-square > .mdl-card__title {
+    color: #fff;
+    background:
+            url('../assets/demos/dog.png') bottom right 15% no-repeat #46B6AC;
+}

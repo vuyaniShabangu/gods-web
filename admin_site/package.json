@@ -1,0 +1,19 @@
+{
+  "name": "godsweb",
+  "version": "1.0.0",
+  "description": "This is the first version",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Kagiso Mahlobogoane",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.1.8",
+    "babelify": "^7.3.0"
+  }
+}
